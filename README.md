@@ -72,3 +72,8 @@ Explore Toziuha Night Dracula's Revenge created by Danny Garay:
 ![Screenshot 3](img/IMG7.png)  
 ![Screenshot 4](img/IMG8.png)
 ![Screenshot 5](img/IMG9.png)
+
+## Credits
+
+- BonQ for help in the porting process and suggesting me this game.
+- [Wolff](https://github.com/WolffsRoom/) for reminding me that this project was a candidate.
