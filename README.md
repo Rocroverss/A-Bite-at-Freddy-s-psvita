@@ -65,7 +65,7 @@ You now have two options:
 ---
 ## 📸 Screenshots
 
-Explore Toziuha Night Dracula's Revenge created by Danny Garay:
+Complete orders, repairs, and challenges!:
 
 ![Screenshot 1](img/IMG5.png) 
 ![Screenshot 2](img/IMG6.png) 
