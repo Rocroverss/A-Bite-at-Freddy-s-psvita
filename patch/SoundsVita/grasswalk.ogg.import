@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/grasswalk.ogg-789ad39e3ed9a402a43d4959d1aff191.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/grasswalk.ogg"
+dest_files=[ "res://.import/grasswalk.ogg-789ad39e3ed9a402a43d4959d1aff191.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

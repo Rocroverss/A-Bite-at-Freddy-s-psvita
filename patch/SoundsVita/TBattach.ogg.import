@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/TBattach.ogg-d986c4326edea5240c54fcc9ca1f3aca.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/TBattach.ogg"
+dest_files=[ "res://.import/TBattach.ogg-d986c4326edea5240c54fcc9ca1f3aca.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rewardPaper.ogg-f3949a462432cada7745dd8246c8ea8d.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/rewardPaper.ogg"
+dest_files=[ "res://.import/rewardPaper.ogg-f3949a462432cada7745dd8246c8ea8d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

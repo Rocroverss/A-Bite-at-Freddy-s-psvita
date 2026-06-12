@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pistolDown.ogg-297b688f14dc4e025afb68b861cbdbe0.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/pistolDown.ogg"
+dest_files=[ "res://.import/pistolDown.ogg-297b688f14dc4e025afb68b861cbdbe0.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tvOn2.ogg-c999a80408863ba8841118db5b197350.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/tvOn2.ogg"
+dest_files=[ "res://.import/tvOn2.ogg-c999a80408863ba8841118db5b197350.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

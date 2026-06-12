@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shockerDown2.ogg-6ccf896e9583b08a1fd1c194a441db3c.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/shockerDown2.ogg"
+dest_files=[ "res://.import/shockerDown2.ogg-6ccf896e9583b08a1fd1c194a441db3c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

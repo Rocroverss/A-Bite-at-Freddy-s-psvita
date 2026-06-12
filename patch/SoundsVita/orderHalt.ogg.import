@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/orderHalt.ogg-74cba98858e9f27ff4d4e567a5d26d66.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/orderHalt.ogg"
+dest_files=[ "res://.import/orderHalt.ogg-74cba98858e9f27ff4d4e567a5d26d66.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

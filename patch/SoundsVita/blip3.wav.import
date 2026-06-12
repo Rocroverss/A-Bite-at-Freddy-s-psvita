@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/blip3.wav-f267f36fb706be92c7a01c99e1c924db.sample"
+
+[deps]
+
+source_file="res://SoundsVita/blip3.wav"
+dest_files=[ "res://.import/blip3.wav-f267f36fb706be92c7a01c99e1c924db.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

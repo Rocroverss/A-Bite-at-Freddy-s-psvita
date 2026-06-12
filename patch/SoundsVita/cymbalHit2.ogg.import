@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/cymbalHit2.ogg-f55644550f6f3018a4a5f152a628ad6c.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/cymbalHit2.ogg"
+dest_files=[ "res://.import/cymbalHit2.ogg-f55644550f6f3018a4a5f152a628ad6c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

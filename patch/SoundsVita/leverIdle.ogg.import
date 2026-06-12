@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/leverIdle.ogg-4954659593d13dae24fadfd0933c0fcc.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/leverIdle.ogg"
+dest_files=[ "res://.import/leverIdle.ogg-4954659593d13dae24fadfd0933c0fcc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

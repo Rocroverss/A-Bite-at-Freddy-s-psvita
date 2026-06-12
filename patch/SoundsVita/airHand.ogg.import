@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/airHand.ogg-ffe2dd774473a2743f74771552d17772.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/airHand.ogg"
+dest_files=[ "res://.import/airHand.ogg-ffe2dd774473a2743f74771552d17772.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

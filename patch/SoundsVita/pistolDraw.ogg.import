@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pistolDraw.ogg-19004c11a84fffac8557fb01509963fc.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/pistolDraw.ogg"
+dest_files=[ "res://.import/pistolDraw.ogg-19004c11a84fffac8557fb01509963fc.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

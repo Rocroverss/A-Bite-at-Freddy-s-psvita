@@ -1,0 +1,1204 @@
+[gd_scene load_steps=161 format=2]
+
+[ext_resource path="res://Scripts/ConveyorRepair.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/testBig.png" type="Texture" id=3]
+[ext_resource path="res://Shaders/ConvBend.tres" type="Shader" id=4]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/convFront.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/convFront_dark.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0015.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw5_rust.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw7_rust.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw6_rust.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw8_rust.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw9_rust.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screwBox.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screwHold.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw8_new.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw1_new.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw2_new.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw5_new.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw4_new.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw3_new.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw9_new.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw7_new.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screw6_new.png" type="Texture" id=23]
+[ext_resource path="res://Fonts/LACONIC_LIGHT.OTF" type="DynamicFontData" id=24]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/turnVert.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/screwRusto.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0015.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0007.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0009.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0010.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0011.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0012.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0008.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0013.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0014.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0001.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0002.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0003.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0005.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0004.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0006.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Jumpscares/bonScare.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0005.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0003.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0006.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0004.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0001.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0002.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeek0016.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0010.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0009.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0010.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0007.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/redirect0008.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0003.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0006.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0012.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0016.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0002.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0005.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0013.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0014.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0015.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0001.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0011.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0007.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0009.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0004.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonFarPeek0008.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/tipBox.png" type="Texture" id=70]
+[ext_resource path="res://SoundsVita/winSound.ogg" type="AudioStream" id=71]
+[ext_resource path="res://Fonts/LACONIC_BOLD.OTF" type="DynamicFontData" id=72]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0027.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0028.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0030.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0029.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0009.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0016.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0008.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0011.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0018.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0023.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0012.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0017.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0001.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0014.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0019.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0020.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0021.png" type="Texture" id=89]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0022.png" type="Texture" id=90]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0024.png" type="Texture" id=91]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0025.png" type="Texture" id=92]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0002.png" type="Texture" id=93]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0013.png" type="Texture" id=94]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0026.png" type="Texture" id=95]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0003.png" type="Texture" id=96]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0005.png" type="Texture" id=97]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0007.png" type="Texture" id=98]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0010.png" type="Texture" id=99]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0004.png" type="Texture" id=100]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0006.png" type="Texture" id=101]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/ConvScare/bonConvScare0015.png" type="Texture" id=102]
+[ext_resource path="res://SoundsVita/screwIn.ogg" type="AudioStream" id=103]
+[ext_resource path="res://SoundsVita/screwFall.ogg" type="AudioStream" id=104]
+[ext_resource path="res://SoundsVita/screwPick.ogg" type="AudioStream" id=105]
+[ext_resource path="res://SoundsVita/screwDrop.ogg" type="AudioStream" id=106]
+[ext_resource path="res://SoundsVita/redirect1.ogg" type="AudioStream" id=107]
+[ext_resource path="res://SoundsVita/redirect2.ogg" type="AudioStream" id=108]
+[ext_resource path="res://SoundsVita/bonConvEnter1.ogg" type="AudioStream" id=109]
+[ext_resource path="res://SoundsVita/bonConvEnter2.ogg" type="AudioStream" id=110]
+[ext_resource path="res://SoundsVita/leverIdle.ogg" type="AudioStream" id=111]
+[ext_resource path="res://SoundsVita/bonConvLeave1.ogg" type="AudioStream" id=112]
+[ext_resource path="res://SoundsVita/bonConvLeave2.ogg" type="AudioStream" id=113]
+[ext_resource path="res://SoundsVita/crawlInConv.ogg" type="AudioStream" id=114]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0016.png" type="Texture" id=115]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0005.png" type="Texture" id=116]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0004.png" type="Texture" id=117]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0013.png" type="Texture" id=118]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0001.png" type="Texture" id=119]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0009.png" type="Texture" id=120]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0014.png" type="Texture" id=121]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0006.png" type="Texture" id=122]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0007.png" type="Texture" id=123]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0002.png" type="Texture" id=124]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0012.png" type="Texture" id=125]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0003.png" type="Texture" id=126]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0010.png" type="Texture" id=127]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0008.png" type="Texture" id=128]
+[ext_resource path="res://Sprites/Cutscenes/ConveyorRepair/bonPeekSide0011.png" type="Texture" id=129]
+[ext_resource path="res://SoundsVita/activeDroneAmbience.ogg" type="AudioStream" id=130]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 36 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 59 ), ExtResource( 55 ), ExtResource( 68 ), ExtResource( 60 ), ExtResource( 56 ), ExtResource( 66 ), ExtResource( 69 ), ExtResource( 67 ), ExtResource( 50 ), ExtResource( 65 ), ExtResource( 57 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 58 ) ],
+"loop": false,
+"name": "peekFarIn",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 62 ), ExtResource( 61 ), ExtResource( 57 ), ExtResource( 65 ), ExtResource( 50 ), ExtResource( 67 ), ExtResource( 69 ), ExtResource( 66 ), ExtResource( 56 ), ExtResource( 60 ), ExtResource( 68 ), ExtResource( 59 ), ExtResource( 64 ), ExtResource( 55 ), null ],
+"loop": false,
+"name": "peekFarOut",
+"speed": 30.0
+}, {
+"frames": [ null, ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 41 ), ExtResource( 28 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 27 ), ExtResource( 49 ) ],
+"loop": false,
+"name": "peekIn",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 28 ), ExtResource( 41 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 38 ), ExtResource( 37 ), ExtResource( 36 ), null ],
+"loop": false,
+"name": "peekOut",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 119 ), ExtResource( 124 ), ExtResource( 126 ), ExtResource( 117 ), ExtResource( 116 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 128 ), ExtResource( 120 ), ExtResource( 127 ), ExtResource( 129 ), ExtResource( 125 ), ExtResource( 118 ), ExtResource( 121 ), ExtResource( 7 ), ExtResource( 115 ) ],
+"loop": false,
+"name": "peekSideIn",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 121 ), ExtResource( 118 ), ExtResource( 125 ), ExtResource( 129 ), ExtResource( 127 ), ExtResource( 120 ), ExtResource( 128 ), ExtResource( 123 ), ExtResource( 122 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 126 ), ExtResource( 124 ), ExtResource( 119 ), null ],
+"loop": false,
+"name": "peekSideOut",
+"speed": 30.0
+} ]
+
+[sub_resource type="SpriteFrames" id=23]
+animations = [ {
+"frames": [ ExtResource( 47 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 51 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 45 ), ExtResource( 43 ), ExtResource( 46 ), ExtResource( 44 ), ExtResource( 48 ), ExtResource( 47 ) ],
+"loop": false,
+"name": "end",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 48 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 43 ), ExtResource( 45 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": false,
+"name": "start",
+"speed": 30.0
+} ]
+
+[sub_resource type="Animation" id=14]
+resource_name = "FlickerEnemy"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.8 ),
+"transitions": PoolRealArray( -2, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.784314 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("AnimationPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.8 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "FlickerIdle" ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "FlickerEnemy2"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8 ),
+"transitions": PoolRealArray( -2, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.941176 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("AnimationPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.8 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "FlickerIdle" ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "FlickerIdle"
+length = 10.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 2.1, 2.3, 2.7, 4, 4.2, 4.8, 5.5, 5.8, 6, 7.5, 7.6, 7.8, 8, 9, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, -2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.784314 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.588235 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.196078 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.313726 ), Color( 1, 1, 1, 0.627451 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "ScareFlicker"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.8 ),
+"transitions": PoolRealArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "BeginScare"
+} ]
+}
+
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ ExtResource( 85 ), ExtResource( 93 ), ExtResource( 96 ), ExtResource( 100 ), ExtResource( 97 ), ExtResource( 101 ), ExtResource( 98 ), ExtResource( 79 ), ExtResource( 77 ), ExtResource( 99 ), ExtResource( 80 ), ExtResource( 83 ), ExtResource( 94 ), ExtResource( 86 ), ExtResource( 102 ), ExtResource( 78 ), ExtResource( 84 ), ExtResource( 81 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 82 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 95 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 76 ), ExtResource( 75 ) ],
+"loop": false,
+"name": "Scare",
+"speed": 24.0
+}, {
+"frames": [ null ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 4 )
+shader_param/amountY = 0.1
+shader_param/amountX = 0.38
+
+[sub_resource type="Animation" id=33]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=34]
+resource_name = "ScareRot"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.7, 1 ),
+"transitions": PoolRealArray( -2, -2, -2, -2, 1 ),
+"update": 0,
+"values": [ 0.0, 8.0, 0.0, -8.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:zoom")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.7, 1 ),
+"transitions": PoolRealArray( -2, -2, -2, -2, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.92, 0.92 ), Vector2( 1, 1 ), Vector2( 0.92, 0.92 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 961, 82 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 24 )
+
+[sub_resource type="Animation" id=8]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "bye"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=7]
+size = 42
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 24 )
+
+[sub_resource type="CanvasItemMaterial" id=17]
+blend_mode = 1
+
+[sub_resource type="Animation" id=18]
+resource_name = "FadeTurn"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.301961 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.301961 ) ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "FadeTurn"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.301961 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=21]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.301961 ) ]
+}
+
+[sub_resource type="ParticlesMaterial" id=35]
+emission_shape = 2
+emission_box_extents = Vector3( 15, 60, 1 )
+flag_disable_z = true
+direction = Vector3( 1, -0.8, 0 )
+spread = 18.0
+gravity = Vector3( 0, 800, 0 )
+initial_velocity = 1500.0
+angular_velocity = 250.0
+angular_velocity_random = 0.4
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.6
+
+[sub_resource type="DynamicFont" id=29]
+size = 72
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.784314 )
+extra_spacing_char = 6
+font_data = ExtResource( 72 )
+
+[sub_resource type="Animation" id=30]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=31]
+resource_name = "WinFade"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 3, 4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("../..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "WinDone"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="DynamicFont" id=28]
+size = 42
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 24 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 22
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 4
+font_data = ExtResource( 24 )
+
+[sub_resource type="Animation" id=26]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=27]
+resource_name = "TipOff"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.5 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="ConveyorRepair" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="BackColorRect" type="ColorRect" parent="."]
+margin_top = 540.0
+margin_right = 1920.0
+margin_bottom = 1620.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 513.5
+margin_top = 1049.5
+margin_right = 1406.5
+margin_bottom = 1110.5
+custom_fonts/font = SubResource( 1 )
+text = "(This is when a repair would happen)"
+align = 1
+
+[node name="Sprite" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+
+[node name="Conveyor" type="Sprite" parent="."]
+position = Vector2( 960, 1080 )
+texture = ExtResource( 5 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 1400, 1087 )
+stream = ExtResource( 109 )
+volume_db = -2.0
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 960, 1080 )
+stream = ExtResource( 110 )
+volume_db = -2.0
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 1400, 1087 )
+stream = ExtResource( 112 )
+volume_db = -2.0
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 960, 1080 )
+stream = ExtResource( 113 )
+volume_db = 4.0
+
+[node name="AmbiencePlayer_drone2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 130 )
+volume_db = -14.0
+autoplay = true
+
+[node name="LightPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 960, 1080 )
+stream = ExtResource( 111 )
+volume_db = -10.0
+autoplay = true
+
+[node name="BonConveyor" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 960, 1123 )
+frames = SubResource( 10 )
+
+[node name="RedirectSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 932, 1175 )
+frames = SubResource( 23 )
+
+[node name="Control" type="Control" parent="."]
+visible = false
+margin_right = 1301.0
+margin_bottom = 1620.0
+rect_clip_content = true
+
+[node name="ScrewSprites" type="Node2D" parent="."]
+
+[node name="screw5" type="Sprite" parent="ScrewSprites"]
+position = Vector2( 278, 1037 )
+texture = ExtResource( 8 )
+
+[node name="screw6" type="Sprite" parent="ScrewSprites"]
+position = Vector2( 310, 1659 )
+texture = ExtResource( 10 )
+
+[node name="screw7" type="Sprite" parent="ScrewSprites"]
+position = Vector2( 522, 192 )
+texture = ExtResource( 9 )
+
+[node name="screw8" type="Sprite" parent="ScrewSprites"]
+position = Vector2( 960, 192 )
+texture = ExtResource( 11 )
+
+[node name="screw9" type="Sprite" parent="ScrewSprites"]
+position = Vector2( 1611, 1659 )
+texture = ExtResource( 12 )
+
+[node name="screw1_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 339, 447 )
+texture = ExtResource( 16 )
+
+[node name="screw2_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 1582, 447 )
+texture = ExtResource( 17 )
+
+[node name="screw3_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 1643, 1037 )
+texture = ExtResource( 20 )
+
+[node name="screw4_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 1399, 192 )
+texture = ExtResource( 19 )
+
+[node name="screw5_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 278, 1037 )
+texture = ExtResource( 18 )
+
+[node name="screw6_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 310, 1659 )
+texture = ExtResource( 23 )
+
+[node name="screw7_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 522, 192 )
+texture = ExtResource( 22 )
+
+[node name="screw8_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 960, 192 )
+texture = ExtResource( 15 )
+
+[node name="screw9_new" type="Sprite" parent="ScrewSprites"]
+visible = false
+position = Vector2( 1611, 1660 )
+texture = ExtResource( 21 )
+
+[node name="Conveyor_Dark" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 1080 )
+texture = ExtResource( 6 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Conveyor_Dark"]
+autoplay = "FlickerIdle"
+anims/FlickerEnemy = SubResource( 14 )
+anims/FlickerEnemy2 = SubResource( 24 )
+anims/FlickerIdle = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+anims/ScareFlicker = SubResource( 22 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 1080 )
+texture = ExtResource( 3 )
+
+[node name="ScarySprite" type="AnimatedSprite" parent="."]
+position = Vector2( 960, 895 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 32 )
+
+[node name="Center" type="Node2D" parent="."]
+position = Vector2( 960, 1080 )
+
+[node name="BackScareCover" type="Node2D" parent="Center"]
+z_index = -1
+
+[node name="ColorRect" type="ColorRect" parent="Center/BackScareCover"]
+margin_left = -1126.0
+margin_top = -791.0
+margin_right = 1121.0
+margin_bottom = 780.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="roomBend" type="ColorRect" parent="Center"]
+material = SubResource( 2 )
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = 540.0
+mouse_filter = 2
+
+[node name="Camera2D" type="Camera2D" parent="Center"]
+rotating = true
+current = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/Camera2D"]
+anims/RESET = SubResource( 33 )
+anims/ScareRot = SubResource( 34 )
+
+[node name="DropButton" type="Button" parent="Center"]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = 540.0
+
+[node name="ScrewButton" type="Button" parent="Center"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 762.0
+margin_top = -89.0
+margin_right = 939.0
+margin_bottom = 90.0
+mouse_default_cursor_shape = 2
+
+[node name="ScrewBox" type="Sprite" parent="Center"]
+visible = false
+position = Vector2( 851, 0 )
+texture = ExtResource( 13 )
+
+[node name="ScrewHold" type="Sprite" parent="Center"]
+visible = false
+position = Vector2( 851, 0 )
+texture = ExtResource( 14 )
+
+[node name="ScrewRusto" type="Sprite" parent="Center"]
+visible = false
+position = Vector2( 881, 0 )
+texture = ExtResource( 26 )
+
+[node name="UpArea2D" type="Area2D" parent="Center"]
+position = Vector2( 0, -486 )
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center/UpArea2D"]
+position = Vector2( 0, 27 )
+shape = SubResource( 5 )
+
+[node name="DownArea2D" type="Area2D" parent="Center"]
+position = Vector2( 0, 433 )
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center/DownArea2D"]
+position = Vector2( 0, 26 )
+shape = SubResource( 5 )
+
+[node name="MoveUp" type="Button" parent="Center"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+margin_left = -425.0
+margin_top = -540.0
+margin_right = 425.0
+margin_bottom = -340.0
+mouse_default_cursor_shape = 2
+
+[node name="MoveDown" type="Button" parent="Center"]
+visible = false
+modulate = Color( 1, 1, 1, 0.392157 )
+margin_left = -425.0
+margin_top = 340.0
+margin_right = 425.0
+margin_bottom = 540.0
+mouse_default_cursor_shape = 2
+
+[node name="SkipLab" type="Label" parent="Center"]
+margin_left = 460.0
+margin_top = 500.0
+margin_right = 939.0
+margin_bottom = 524.0
+custom_fonts/font = SubResource( 6 )
+text = "Click a screw to collect"
+align = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/SkipLab"]
+anims/RESET = SubResource( 8 )
+anims/bye = SubResource( 9 )
+
+[node name="ScrewLab" type="Label" parent="Center"]
+margin_left = 408.0
+margin_top = -510.0
+margin_right = 932.0
+margin_bottom = -421.0
+custom_fonts/font = SubResource( 7 )
+text = "Screws Collected
+0/5"
+align = 2
+
+[node name="TurnUp" type="Sprite" parent="Center"]
+modulate = Color( 1, 1, 1, 0.301961 )
+material = SubResource( 17 )
+position = Vector2( 0, -462 )
+texture = ExtResource( 25 )
+flip_v = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/TurnUp"]
+anims/FadeTurn = SubResource( 18 )
+anims/RESET = SubResource( 19 )
+
+[node name="TurnDown" type="Sprite" parent="Center"]
+modulate = Color( 1, 1, 1, 0.301961 )
+material = SubResource( 17 )
+position = Vector2( 0, 463 )
+texture = ExtResource( 25 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/TurnDown"]
+anims/FadeTurn = SubResource( 20 )
+anims/RESET = SubResource( 21 )
+
+[node name="ScareSprite" type="Sprite" parent="Center"]
+visible = false
+modulate = Color( 1, 1, 1, 0.403922 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 42 )
+
+[node name="ScrewParticles" type="Particles2D" parent="Center"]
+visible = false
+position = Vector2( -1040, 540 )
+emitting = false
+amount = 6
+lifetime = 4.0
+one_shot = true
+explosiveness = 0.8
+process_material = SubResource( 35 )
+texture = ExtResource( 14 )
+
+[node name="ScrewParticlesCPU" type="CPUParticles2D" parent="Center"]
+visible = false
+position = Vector2( -1040, 540 )
+emitting = false
+amount = 6
+lifetime = 4.0
+one_shot = true
+explosiveness = 0.8
+texture = ExtResource( 14 )
+emission_shape = 2
+emission_rect_extents = Vector2( 15, 60 )
+direction = Vector2( 1, -0.8 )
+spread = 18.0
+gravity = Vector2( 0, 800 )
+initial_velocity = 1500.0
+angular_velocity = 250.0
+angular_velocity_random = 0.4
+scale_amount = 0.6
+
+[node name="WinTxt" type="Label" parent="Center"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 962.0
+margin_bottom = 540.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 0.784314 )
+custom_constants/shadow_offset_x = 3
+custom_constants/line_spacing = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 29 )
+text = "Minigame Complete!"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/WinTxt"]
+anims/RESET = SubResource( 30 )
+anims/WinFade = SubResource( 31 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Center/WinTxt"]
+stream = ExtResource( 71 )
+volume_db = -3.0
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Center"]
+stream = ExtResource( 114 )
+volume_db = -8.0
+autoplay = true
+
+[node name="ScrewButtons" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 0, 540 )
+
+[node name="S1Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 295.0
+margin_top = -134.0
+margin_right = 395.0
+margin_bottom = -34.0
+action_mode = 0
+
+[node name="S2Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 1541.0
+margin_top = -134.0
+margin_right = 1641.0
+margin_bottom = -34.0
+action_mode = 0
+
+[node name="S3Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 1601.0
+margin_top = 453.0
+margin_right = 1701.0
+margin_bottom = 553.0
+action_mode = 0
+
+[node name="S4Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 1354.0
+margin_top = -389.0
+margin_right = 1454.0
+margin_bottom = -289.0
+action_mode = 0
+
+[node name="S5Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 221.0
+margin_top = 453.0
+margin_right = 321.0
+margin_bottom = 553.0
+action_mode = 0
+
+[node name="S6Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 260.0
+margin_top = 1084.0
+margin_right = 360.0
+margin_bottom = 1184.0
+action_mode = 0
+
+[node name="S7Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 482.0
+margin_top = -389.0
+margin_right = 582.0
+margin_bottom = -289.0
+action_mode = 0
+
+[node name="S8Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 909.0
+margin_top = -389.0
+margin_right = 1009.0
+margin_bottom = -289.0
+action_mode = 0
+
+[node name="S9Button" type="Button" parent="ScrewButtons"]
+modulate = Color( 1, 1, 1, 0.490196 )
+margin_left = 1567.0
+margin_top = 1084.0
+margin_right = 1667.0
+margin_bottom = 1184.0
+action_mode = 0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="ScrewButtons"]
+stream = ExtResource( 103 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="ScrewButtons"]
+stream = ExtResource( 104 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="ScrewButtons"]
+stream = ExtResource( 105 )
+volume_db = -10.0
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="ScrewButtons"]
+stream = ExtResource( 106 )
+volume_db = -12.0
+
+[node name="RedirectButton" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 625.0
+margin_top = 759.0
+margin_right = 960.0
+margin_bottom = 1438.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+action_mode = 0
+enabled_focus_mode = 0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="RedirectButton"]
+stream = ExtResource( 107 )
+volume_db = -1.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="RedirectButton"]
+stream = ExtResource( 108 )
+volume_db = -1.0
+
+[node name="MouseRefRect" type="ColorRect" parent="."]
+visible = false
+margin_left = 830.0
+margin_top = 1080.0
+margin_right = 870.0
+margin_bottom = 1120.0
+mouse_filter = 2
+
+[node name="TipBox" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.294118 )
+position = Vector2( 787, 1121 )
+texture = ExtResource( 70 )
+
+[node name="RediLab" type="Label" parent="TipBox"]
+modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = -91.0
+margin_top = 71.0
+margin_right = 89.0
+margin_bottom = 114.0
+custom_fonts/font = SubResource( 28 )
+text = "REDIRECT"
+align = 1
+valign = 1
+
+[node name="RediLab2" type="Label" parent="TipBox"]
+modulate = Color( 1, 1, 1, 0.588235 )
+margin_left = -91.0
+margin_top = 114.0
+margin_right = 89.0
+margin_bottom = 157.0
+custom_fonts/font = SubResource( 25 )
+text = "Click and hold"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TipBox"]
+anims/RESET = SubResource( 26 )
+anims/TipOff = SubResource( 27 )
+
+[connection signal="animation_finished" from="ScarySprite" to="." method="_on_ScarySprite_animation_finished"]
+[connection signal="pressed" from="Center/DropButton" to="." method="_on_DropButton_pressed"]
+[connection signal="pressed" from="Center/ScrewButton" to="." method="_on_ScrewButton_pressed"]
+[connection signal="mouse_entered" from="Center/UpArea2D" to="." method="_on_UpArea2D_mouse_entered"]
+[connection signal="mouse_entered" from="Center/DownArea2D" to="." method="_on_DownArea2D_mouse_entered"]
+[connection signal="pressed" from="Center/MoveUp" to="." method="_on_MoveUp_pressed"]
+[connection signal="pressed" from="Center/MoveDown" to="." method="_on_MoveDown_pressed"]
+[connection signal="pressed" from="ScrewButtons/S1Button" to="." method="_on_S1Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S2Button" to="." method="_on_S2Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S3Button" to="." method="_on_S3Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S4Button" to="." method="_on_S4Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S5Button" to="." method="_on_S5Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S6Button" to="." method="_on_S6Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S7Button" to="." method="_on_S7Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S8Button" to="." method="_on_S8Button_pressed"]
+[connection signal="pressed" from="ScrewButtons/S9Button" to="." method="_on_S9Button_pressed"]
+[connection signal="button_up" from="RedirectButton" to="." method="_on_RedirectButton_button_up"]
+[connection signal="pressed" from="RedirectButton" to="." method="_on_RedirectButton_pressed"]

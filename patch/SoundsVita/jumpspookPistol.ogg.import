@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jumpspookPistol.ogg-56bcd7bdd1ec391fcbf3a2bdaf85f3e9.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/jumpspookPistol.ogg"
+dest_files=[ "res://.import/jumpspookPistol.ogg-56bcd7bdd1ec391fcbf3a2bdaf85f3e9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

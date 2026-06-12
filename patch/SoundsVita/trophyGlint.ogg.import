@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/trophyGlint.ogg-20720e33a4ed361109b6da20f624cb29.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/trophyGlint.ogg"
+dest_files=[ "res://.import/trophyGlint.ogg-20720e33a4ed361109b6da20f624cb29.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/thereissomethingonthecamsstaycalmstaycalm.ogg-61fa42f05d95a32d01e0e73c10a6f920.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/thereissomethingonthecamsstaycalmstaycalm.ogg"
+dest_files=[ "res://.import/thereissomethingonthecamsstaycalmstaycalm.ogg-61fa42f05d95a32d01e0e73c10a6f920.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

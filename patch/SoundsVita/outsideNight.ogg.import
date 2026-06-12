@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/outsideNight.ogg-fe84b6c1935b6ede2e246e55f1d6f193.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/outsideNight.ogg"
+dest_files=[ "res://.import/outsideNight.ogg-fe84b6c1935b6ede2e246e55f1d6f193.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

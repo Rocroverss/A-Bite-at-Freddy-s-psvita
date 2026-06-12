@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/transmissionOver.ogg-7f0d420171b4895e447cec8a81622544.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/transmissionOver.ogg"
+dest_files=[ "res://.import/transmissionOver.ogg-7f0d420171b4895e447cec8a81622544.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

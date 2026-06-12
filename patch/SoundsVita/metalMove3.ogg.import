@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/metalMove3.ogg-0d84728a1fe3b242da82a15d545aad77.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/metalMove3.ogg"
+dest_files=[ "res://.import/metalMove3.ogg-0d84728a1fe3b242da82a15d545aad77.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

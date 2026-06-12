@@ -1,0 +1,1750 @@
+[gd_scene load_steps=85 format=2]
+
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Fonts/LACONIC_BOLD.OTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Fonts/LACONIC_LIGHT.OTF" type="DynamicFontData" id=4]
+[ext_resource path="res://Sprites/UI/MainMenu/menuBgr1.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/UI/selArrow.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/UI/logoTxt2.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/UI/slideBit.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/checkBack.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/checkMark.png" type="Texture" id=10]
+[ext_resource path="res://Shaders/TVWarbleScreen.gdshader" type="Shader" id=11]
+[ext_resource path="res://Sprites/UI/bitey0005.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/UI/bitey0007.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/UI/bitey0002.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/UI/bitey0001.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/UI/bitey0006.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/UI/bitey0004.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/UI/bitey0003.png" type="Texture" id=18]
+[ext_resource path="res://SoundsVita/clickButton2.ogg" type="AudioStream" id=19]
+[ext_resource path="res://Sprites/UI/loadWheel.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/UI/MainMenu/menuTrophy2.png" type="Texture" id=21]
+[ext_resource path="res://SoundsVita/bitey.ogg" type="AudioStream" id=22]
+[ext_resource path="res://SoundsVita/staticTv.ogg" type="AudioStream" id=23]
+[ext_resource path="res://Sprites/UI/MainMenu/menuBgr2.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/UI/MainMenu/menuBgr3.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/UI/MainMenu/menuBgr4.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/UI/MainMenu/menuBgr5.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/UI/MainMenu/menuBgr6.png" type="Texture" id=28]
+[ext_resource path="res://SoundsVita/alert.ogg" type="AudioStream" id=29]
+[ext_resource path="res://Sprites/UI/MainMenu/suitMenuOvr.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/UI/MainMenu/menuTrophy1.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/UI/MainMenu/menuTrophy3.png" type="Texture" id=32]
+[ext_resource path="res://SoundsVita/Music/crime-mystery-03.ogg" type="AudioStream" id=33]
+[ext_resource path="res://SoundsVita/sodaWon.ogg" type="AudioStream" id=34]
+[ext_resource path="res://Sprites/Extras/mug.png" type="Texture" id=35]
+[ext_resource path="res://SoundsVita/trophyGlint.ogg" type="AudioStream" id=36]
+[ext_resource path="res://Sprites/UI/Backdrops/secFb.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/UI/Backdrops/fredFigure.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/UI/Backdrops/figures.png" type="Texture" id=39]
+[ext_resource path="res://SoundsVita/shadowFb.ogg" type="AudioStream" id=40]
+
+[sub_resource type="SpriteFrames" id=58]
+animations = [ {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 26 ) ],
+"loop": true,
+"name": "4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 27 ) ],
+"loop": true,
+"name": "5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ) ],
+"loop": true,
+"name": "6",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=60]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=61]
+resource_name = "SuitFade"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2, 5 ),
+"transitions": PoolRealArray( 0, -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 11 )
+shader_param/movement = 6.0
+shader_param/wave_speed = 1.2
+shader_param/wave_freq = 2.0
+shader_param/wave_width = 0.1
+
+[sub_resource type="Shader" id=68]
+code = "shader_type canvas_item;
+
+uniform int cell_amount = 30;
+uniform vec2 period = vec2(5., 10.);
+uniform sampler2D uv_off_tex : hint_black;
+uniform float speed = 5.0;
+// Speed 5.0 works well
+uniform float transparency : hint_range(0.0, 1.0);
+
+vec2 modulo(vec2 divident, vec2 divisor){
+	vec2 positiveDivident = mod(divident, divisor) + divisor;
+	return mod(positiveDivident, divisor);
+}
+
+vec2 random(vec2 value){
+	value = vec2( dot(value, vec2(127.1,311.7) ),
+				  dot(value, vec2(269.5,183.3) ) ) * TIME;
+	return -1.0 + 2.0 * fract(sin(value) * 43758.5453123);
+}
+
+float seamless_noise(vec2 uv, vec2 _period) {
+	uv = uv * float(cell_amount);
+	vec2 cellsMinimum = floor(uv);
+	vec2 cellsMaximum = ceil(uv);
+	vec2 uv_fract = fract(uv);
+	
+	cellsMinimum = modulo(cellsMinimum, _period);
+	cellsMaximum = modulo(cellsMaximum, _period);
+	
+	vec2 blur = smoothstep(0.0, 1.0, uv_fract);
+	
+	vec2 lowerLeftDirection = random(vec2(cellsMinimum.x, cellsMinimum.y));
+	vec2 lowerRightDirection = random(vec2(cellsMaximum.x, cellsMinimum.y));
+	vec2 upperLeftDirection = random(vec2(cellsMinimum.x, cellsMaximum.y));
+	vec2 upperRightDirection = random(vec2(cellsMaximum.x, cellsMaximum.y));
+	
+	vec2 fraction = fract(uv);
+	
+	return mix( mix( dot( lowerLeftDirection, fraction - vec2(0, 0) ),
+                     dot( lowerRightDirection, fraction - vec2(1, 0) ), blur.x),
+                mix( dot( upperLeftDirection, fraction - vec2(0, 1) ),
+                     dot( upperRightDirection, fraction - vec2(1, 1) ), blur.x), blur.y) * 0.8 + 0.5;
+}
+
+mat4 contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+
+void fragment(){
+	//float noise = seamless_noise(UV, period);
+	//COLOR.rgb = vec3(noise);
+	//COLOR *= contrastMatrix(2.0);
+	//COLOR.a = 1.0;
+	
+	vec2 newUv = vec2(UV.x * 0.3, UV.y);
+	
+	COLOR = texture(uv_off_tex, newUv + (TIME * speed));
+	vec3 funColor = clamp(COLOR.rgb, 0.0, 0.1);
+	COLOR.a = mix(COLOR.a * funColor.r * 3.0, 0.0, transparency);
+}
+"
+
+[sub_resource type="OpenSimplexNoise" id=37]
+octaves = 2
+period = 3.5
+persistence = 0.05
+
+[sub_resource type="NoiseTexture" id=69]
+seamless = true
+noise = SubResource( 37 )
+
+[sub_resource type="ShaderMaterial" id=38]
+shader = SubResource( 68 )
+shader_param/cell_amount = 30
+shader_param/period = Vector2( 5, 10 )
+shader_param/speed = 1.5
+shader_param/transparency = 0.85
+shader_param/uv_off_tex = SubResource( 69 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 48
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.705882 )
+extra_spacing_char = 3
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=54]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=55]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="Animation" id=49]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=50]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="DynamicFont" id=48]
+size = 36
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.705882 )
+extra_spacing_char = 3
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=72]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=73]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="Animation" id=64]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=65]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="Animation" id=66]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=67]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="Animation" id=56]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=57]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="Animation" id=70]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+
+[sub_resource type="Animation" id=71]
+resource_name = "Selected"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("BeginLabel:modulate:a")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 0.25, 1.0 ]
+}
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=59]
+size = 26
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 8
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 108
+outline_size = 5
+outline_color = Color( 0, 0, 0, 0.705882 )
+extra_spacing_char = 4
+font_data = ExtResource( 3 )
+
+[sub_resource type="SpriteFrames" id=39]
+animations = [ {
+"frames": [ ExtResource( 15 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "biting",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[sub_resource type="Animation" id=40]
+resource_name = "Attack"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1170.0, 1123.0, 1170.0 ]
+}
+
+[sub_resource type="Animation" id=44]
+resource_name = "Attack2"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 1160.0, 1123.0, 1160.0 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ "biting" ],
+"method": "play"
+}, {
+"args": [ "default" ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Animation" id=41]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1170.0 ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "Attack"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 750.0, 797.0, 750.0 ]
+}
+
+[sub_resource type="Animation" id=46]
+resource_name = "Attack2"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 760.0, 1123.0, 760.0 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"values": [ {
+"args": [ "biting" ],
+"method": "play"
+}, {
+"args": [ "default" ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Animation" id=47]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 750.0 ]
+}
+
+[sub_resource type="DynamicFont" id=80]
+size = 22
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 4
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=74]
+size = 32
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=75]
+size = 32
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=79]
+size = 30
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 5
+font_data = ExtResource( 4 )
+
+[sub_resource type="SpriteFrames" id=76]
+animations = [ {
+"frames": [ ExtResource( 37 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 39 ) ],
+"loop": true,
+"name": "figures",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ) ],
+"loop": true,
+"name": "fredFig",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=77]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=78]
+resource_name = "SecretOut"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6, 1.6 ),
+"transitions": PoolRealArray( 0.5, 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=51]
+resource_name = "FadeIn"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=53]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "NextScene"
+} ]
+}
+
+[sub_resource type="Animation" id=52]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[node name="Menu" type="Control"]
+margin_right = 966.0
+margin_bottom = 558.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ -211.0 ]
+}
+
+[node name="MenuBack" type="AnimatedSprite" parent="."]
+frames = SubResource( 58 )
+centered = false
+
+[node name="SuitOvr" type="Sprite" parent="."]
+visible = false
+position = Vector2( 379, 312 )
+texture = ExtResource( 30 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SuitOvr"]
+anims/RESET = SubResource( 60 )
+anims/SuitFade = SubResource( 61 )
+
+[node name="testTV" type="ColorRect" parent="."]
+material = SubResource( 4 )
+margin_right = 960.0
+margin_bottom = 544.0
+
+[node name="StaticShad" type="ColorRect" parent="."]
+material = SubResource( 38 )
+margin_right = 960.0
+margin_bottom = 544.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -490.0
+margin_top = -231.0
+margin_right = 1430.0
+margin_bottom = 584.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="SelLabel" type="Label" parent="CenterContainer"]
+visible = false
+margin_left = 793.0
+margin_top = 383.0
+margin_right = 1126.0
+margin_bottom = 431.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = ">                  <"
+align = 1
+valign = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 750.0
+margin_top = 104.0
+margin_right = 1170.0
+margin_bottom = 710.0
+rect_min_size = Vector2( 420, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="BeginButton" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 420.0
+margin_bottom = 118.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/BeginButton"]
+margin_right = 420.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "New Game"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/VBoxContainer/BeginButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 54 )
+anims/Selected = SubResource( 55 )
+
+[node name="ContinueButton" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 122.0
+margin_right = 420.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ContinueButton"]
+margin_right = 420.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Continue 1"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/VBoxContainer/ContinueButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 49 )
+anims/Selected = SubResource( 50 )
+
+[node name="BeginLabel2" type="Label" parent="CenterContainer/VBoxContainer/ContinueButton"]
+visible = false
+margin_left = 286.0
+margin_top = 7.0
+margin_right = 350.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 48 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="FinaleButton" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 244.0
+margin_right = 420.0
+margin_bottom = 362.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/FinaleButton"]
+margin_right = 420.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Final Course"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/VBoxContainer/FinaleButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 72 )
+anims/Selected = SubResource( 73 )
+
+[node name="BeginLabel2" type="Label" parent="CenterContainer/VBoxContainer/FinaleButton"]
+visible = false
+margin_left = 286.0
+margin_top = 7.0
+margin_right = 350.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 48 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="ContinueButton3" type="Button" parent="CenterContainer/VBoxContainer"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 244.0
+margin_right = 420.0
+margin_bottom = 362.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ContinueButton3"]
+margin_right = 420.0
+margin_bottom = 118.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Extras"
+align = 1
+valign = 1
+
+[node name="ContinueButton2" type="Button" parent="CenterContainer/VBoxContainer"]
+visible = false
+margin_top = 244.0
+margin_right = 420.0
+margin_bottom = 362.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ContinueButton2"]
+margin_right = 420.0
+margin_bottom = 118.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Custom Night"
+align = 1
+valign = 1
+
+[node name="ExtrasButton" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 366.0
+margin_right = 420.0
+margin_bottom = 484.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ExtrasButton"]
+margin_right = 420.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Extras"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/VBoxContainer/ExtrasButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 64 )
+anims/Selected = SubResource( 65 )
+
+[node name="BeginLabel2" type="Label" parent="CenterContainer/VBoxContainer/ExtrasButton"]
+visible = false
+margin_left = 286.0
+margin_top = 7.0
+margin_right = 350.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 48 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="ChallengeButton" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 488.0
+margin_right = 420.0
+margin_bottom = 606.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChallengeButton"]
+margin_right = 420.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Challenges"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/VBoxContainer/ChallengeButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 66 )
+anims/Selected = SubResource( 67 )
+
+[node name="BeginLabel2" type="Label" parent="CenterContainer/VBoxContainer/ChallengeButton"]
+visible = false
+margin_left = 286.0
+margin_top = 7.0
+margin_right = 350.0
+margin_bottom = 118.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 48 )
+text = "3"
+align = 1
+valign = 1
+
+[node name="OptionsButton" type="Button" parent="CenterContainer/VBoxContainer"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 610.0
+margin_right = 420.0
+margin_bottom = 728.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_vertical = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/OptionsButton"]
+margin_right = 420.0
+margin_bottom = 118.0
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Options"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer/VBoxContainer/OptionsButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 56 )
+anims/Selected = SubResource( 57 )
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="CenterContainer"]
+stream = ExtResource( 19 )
+volume_db = -4.0
+
+[node name="OptionsButton" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 829.0
+margin_top = 459.0
+margin_right = 943.0
+margin_bottom = 577.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_vertical = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="OptionsButton"]
+margin_right = 203.0
+margin_bottom = 118.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Options"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OptionsButton/BeginLabel"]
+root_node = NodePath("../..")
+anims/RESET = SubResource( 70 )
+anims/Selected = SubResource( 71 )
+
+[node name="Version" type="Label" parent="."]
+margin_left = 9.0
+margin_top = 494.0
+margin_right = 214.0
+margin_bottom = 526.0
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "V 1.0.4"
+
+[node name="Name" type="Label" parent="."]
+margin_left = 680.0
+margin_top = 517.0
+margin_right = 1200.0
+margin_bottom = 549.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "2023 Garrett McKay"
+align = 2
+
+[node name="ResetData" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -130.0
+margin_top = 236.0
+margin_right = 379.0
+margin_bottom = 268.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 1
+custom_fonts/font = SubResource( 59 )
+text = "Hold \"Delete\" to reset data"
+align = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="ResetData"]
+stream = ExtResource( 29 )
+volume_db = -2.0
+
+[node name="TitleLabel" type="Label" parent="."]
+visible = false
+margin_right = 1920.0
+margin_bottom = 360.0
+custom_colors/font_color = Color( 0.811765, 0.729412, 0.447059, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 3 )
+text = "A BITE AT FREDDY'S"
+align = 1
+valign = 1
+
+[node name="LogoTxt2" type="Sprite" parent="."]
+modulate = Color( 1, 0.953333, 0.8, 1 )
+position = Vector2( 485, 45 )
+scale = Vector2( 0.817059, 0.817059 )
+texture = ExtResource( 7 )
+
+[node name="BiteySpritey" type="AnimatedSprite" parent="."]
+position = Vector2( 947, 451 )
+frames = SubResource( 39 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BiteySpritey"]
+anims/Attack = SubResource( 40 )
+anims/Attack2 = SubResource( 44 )
+anims/RESET = SubResource( 41 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BiteySpritey"]
+stream = ExtResource( 22 )
+volume_db = -2.0
+pitch_scale = 1.05
+
+[node name="BiteySpritey2" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 750, 625 )
+frames = SubResource( 39 )
+flip_h = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="BiteySpritey2"]
+anims/Attack = SubResource( 45 )
+anims/Attack2 = SubResource( 46 )
+anims/RESET = SubResource( 47 )
+
+[node name="selArrow" type="Sprite" parent="."]
+visible = false
+position = Vector2( 806, 514 )
+texture = ExtResource( 6 )
+
+[node name="Trophies" type="Node2D" parent="."]
+visible = false
+
+[node name="Trophy1" type="Sprite" parent="Trophies"]
+position = Vector2( 1803, 107 )
+texture = ExtResource( 31 )
+
+[node name="Trophy2" type="Sprite" parent="Trophies"]
+position = Vector2( 1803, 257 )
+texture = ExtResource( 21 )
+
+[node name="Trophy3" type="Sprite" parent="Trophies"]
+position = Vector2( 1803, 430 )
+texture = ExtResource( 32 )
+
+[node name="Trophy1Button" type="Button" parent="Trophies"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1725.0
+margin_top = 49.0
+margin_right = 1881.0
+margin_bottom = 167.0
+focus_mode = 0
+action_mode = 0
+
+[node name="Trophy2Button" type="Button" parent="Trophies"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1725.0
+margin_top = 196.0
+margin_right = 1881.0
+margin_bottom = 324.0
+action_mode = 0
+
+[node name="Trophy3Button" type="Button" parent="Trophies"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1725.0
+margin_top = 354.0
+margin_right = 1881.0
+margin_bottom = 508.0
+action_mode = 0
+
+[node name="TrophyGlint" type="AudioStreamPlayer" parent="Trophies"]
+stream = ExtResource( 36 )
+volume_db = -16.0
+pitch_scale = 1.25
+
+[node name="TrophyName" type="Label" parent="Trophies"]
+visible = false
+margin_left = 1377.0
+margin_top = 14.0
+margin_right = 1897.0
+margin_bottom = 46.0
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 80 )
+text = "GAME COMPLETED"
+align = 2
+
+[node name="NewConfirm" type="Control" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="ColorRect2" type="ColorRect" parent="NewConfirm"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1880.0
+margin_bottom = 1040.0
+color = Color( 0, 0, 0, 0.960784 )
+
+[node name="CenterContainer" type="CenterContainer" parent="NewConfirm/ColorRect2"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_min_size = Vector2( 1920, 1080 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NewConfirm/ColorRect2/CenterContainer"]
+margin_left = 756.0
+margin_top = 500.0
+margin_right = 1163.0
+margin_bottom = 580.0
+
+[node name="NewLabel" type="Label" parent="NewConfirm/ColorRect2/CenterContainer/VBoxContainer"]
+margin_right = 407.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 0, 80 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Start new game?"
+align = 1
+valign = 1
+
+[node name="NewLabel2" type="Label" parent="NewConfirm"]
+margin_left = 825.0
+margin_top = 580.0
+margin_right = 1094.0
+margin_bottom = 660.0
+rect_min_size = Vector2( 0, 80 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Yes        No"
+align = 1
+valign = 1
+
+[node name="YesButton" type="Button" parent="NewConfirm"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 759.0
+margin_top = 568.0
+margin_right = 965.0
+margin_bottom = 666.0
+
+[node name="NoButton" type="Button" parent="NewConfirm"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 965.0
+margin_top = 568.0
+margin_right = 1161.0
+margin_bottom = 666.0
+
+[node name="SodaStuff" type="Node2D" parent="."]
+position = Vector2( 12, 323 )
+
+[node name="SodaRect" type="ColorRect" parent="SodaStuff"]
+visible = false
+margin_top = 43.0
+margin_right = 93.0
+margin_bottom = 178.0
+color = Color( 0.25098, 0.701961, 0.807843, 1 )
+
+[node name="Mug" type="Sprite" parent="SodaStuff"]
+position = Vector2( 37, 111 )
+texture = ExtResource( 35 )
+
+[node name="SodaWinTxt" type="Label" parent="SodaStuff"]
+margin_left = -10.0
+margin_top = 43.0
+margin_right = 83.0
+margin_bottom = 178.0
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 74 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="SodaWinLab" type="Label" parent="SodaStuff"]
+visible = false
+margin_right = 189.0
+margin_bottom = 137.0
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 75 )
+text = "Sodas Won:
+"
+
+[node name="SodaButton" type="Button" parent="SodaStuff"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -2.0
+margin_top = 42.0
+margin_right = 107.0
+margin_bottom = 179.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="SodaStuff/SodaButton"]
+position = Vector2( 450, 0 )
+stream = ExtResource( 34 )
+volume_db = -8.0
+
+[node name="Options" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="Options"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.960784 )
+
+[node name="GridContainer" type="GridContainer" parent="Options"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 256.0
+margin_top = 144.0
+margin_right = -256.0
+margin_bottom = -144.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Options"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Options/CenterContainer"]
+margin_left = 81.0
+margin_top = 185.0
+margin_right = 885.0
+margin_bottom = 373.0
+custom_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Options/CenterContainer/VBoxContainer"]
+margin_right = 804.0
+margin_bottom = 32.0
+
+[node name="Version2" type="Label" parent="Options/CenterContainer/VBoxContainer/HBoxContainer"]
+margin_right = 300.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_vertical = 7
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "VOLUME (100%)"
+valign = 1
+
+[node name="VolumeSlider" type="HSlider" parent="Options/CenterContainer/VBoxContainer/HBoxContainer"]
+margin_left = 304.0
+margin_right = 804.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 500, 0 )
+focus_mode = 0
+custom_icons/grabber_highlight = ExtResource( 8 )
+custom_icons/grabber = ExtResource( 8 )
+value = 100.0
+scrollable = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Options/CenterContainer/VBoxContainer/HBoxContainer/VolumeSlider"]
+stream = ExtResource( 19 )
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="Options/CenterContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 804.0
+margin_bottom = 87.0
+
+[node name="Version3" type="Label" parent="Options/CenterContainer/VBoxContainer/HBoxContainer4"]
+margin_top = 1.0
+margin_right = 296.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 296, 0 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 0
+custom_fonts/font = SubResource( 1 )
+text = "MUSIC"
+valign = 1
+
+[node name="CheckBoxMusic" type="CheckBox" parent="Options/CenterContainer/VBoxContainer/HBoxContainer4"]
+margin_left = 300.0
+margin_right = 335.0
+margin_bottom = 35.0
+focus_mode = 0
+size_flags_vertical = 3
+custom_icons/checked = ExtResource( 10 )
+custom_icons/unchecked = ExtResource( 9 )
+pressed = true
+enabled_focus_mode = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Options/CenterContainer/VBoxContainer"]
+margin_top = 107.0
+margin_right = 804.0
+margin_bottom = 142.0
+
+[node name="Version3" type="Label" parent="Options/CenterContainer/VBoxContainer/HBoxContainer2"]
+margin_top = 1.0
+margin_right = 296.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 296, 0 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 0
+custom_fonts/font = SubResource( 1 )
+text = "FULLSCREEN"
+valign = 1
+
+[node name="CheckBox" type="CheckBox" parent="Options/CenterContainer/VBoxContainer/HBoxContainer2"]
+margin_left = 300.0
+margin_right = 335.0
+margin_bottom = 35.0
+focus_mode = 0
+size_flags_vertical = 3
+custom_icons/checked = ExtResource( 10 )
+custom_icons/unchecked = ExtResource( 9 )
+pressed = true
+enabled_focus_mode = 0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Options/CenterContainer/VBoxContainer"]
+margin_top = 162.0
+margin_right = 804.0
+margin_bottom = 197.0
+
+[node name="Version3" type="Label" parent="Options/CenterContainer/VBoxContainer/HBoxContainer3"]
+margin_top = 1.0
+margin_right = 296.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 296, 0 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 0
+custom_fonts/font = SubResource( 1 )
+text = "TUTORIAL REPLAY"
+valign = 1
+
+[node name="CheckBoxBorder" type="CheckBox" parent="Options/CenterContainer/VBoxContainer/HBoxContainer3"]
+margin_left = 300.0
+margin_right = 335.0
+margin_bottom = 35.0
+focus_mode = 0
+size_flags_vertical = 3
+custom_icons/checked = ExtResource( 10 )
+custom_icons/unchecked = ExtResource( 9 )
+enabled_focus_mode = 0
+
+[node name="BackButton" type="Button" parent="Options"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 935.0
+margin_right = 250.0
+margin_bottom = 1080.0
+rect_min_size = Vector2( 0, 118 )
+size_flags_vertical = 3
+
+[node name="BackLabel" type="Label" parent="Options/BackButton"]
+margin_right = 250.0
+margin_bottom = 145.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Back"
+align = 1
+valign = 1
+
+[node name="OptionDesc" type="Label" parent="Options"]
+margin_top = 988.0
+margin_right = 1920.0
+margin_bottom = 1020.0
+rect_min_size = Vector2( 300, 0 )
+size_flags_vertical = 7
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 79 )
+text = "Volume: Game's master volume"
+align = 1
+valign = 1
+
+[node name="SecretSprite" type="AnimatedSprite" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+frames = SubResource( 76 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="SecretSprite"]
+anims/RESET = SubResource( 77 )
+anims/SecretOut = SubResource( 78 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="SecretSprite"]
+stream = ExtResource( 40 )
+volume_db = -2.0
+pitch_scale = 0.85
+
+[node name="FadeRect" type="ColorRect" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="LoadSprite" type="Sprite" parent="FadeRect"]
+visible = false
+position = Vector2( 1812, 972 )
+texture = ExtResource( 20 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeRect"]
+anims/FadeIn = SubResource( 51 )
+anims/FadeOut = SubResource( 53 )
+anims/RESET = SubResource( 52 )
+
+[node name="StaticSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+volume_db = -24.0
+pitch_scale = 0.4
+autoplay = true
+
+[node name="TestSkipButton1" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 193.0
+margin_top = 1034.0
+margin_right = 211.0
+margin_bottom = 1062.0
+focus_mode = 0
+
+[node name="TestSkipButton2" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 213.0
+margin_top = 1034.0
+margin_right = 230.0
+margin_bottom = 1062.0
+
+[node name="TestSkipButton3" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 176.0
+margin_top = 1034.0
+margin_right = 191.0
+margin_bottom = 1062.0
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 33 )
+volume_db = -21.0
+
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/BeginButton" to="." method="_on_BeginButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/BeginButton" to="." method="_on_BeginButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/BeginButton" to="." method="_on_BeginButton_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/FinaleButton" to="." method="_on_FinaleButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/FinaleButton" to="." method="_on_FinaleButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/FinaleButton" to="." method="_on_FinaleButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ContinueButton3" to="." method="_on_BeginButton_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ContinueButton2" to="." method="_on_BeginButton_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ExtrasButton" to="." method="_on_ExtrasButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ExtrasButton" to="." method="_on_ExtrasButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ExtrasButton" to="." method="_on_ExtrasButton_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChallengeButton" to="." method="_on_ChallengeButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChallengeButton" to="." method="_on_ChallengeButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChallengeButton" to="." method="_on_ChallengeButton_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="mouse_entered" from="OptionsButton" to="." method="_on_OptionsButton_mouse_entered"]
+[connection signal="mouse_exited" from="OptionsButton" to="." method="_on_OptionsButton_mouse_exited"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_OptionsButton_pressed"]
+[connection signal="mouse_entered" from="Trophies/Trophy1Button" to="." method="_on_Trophy1Button_mouse_entered"]
+[connection signal="mouse_exited" from="Trophies/Trophy1Button" to="." method="_on_Trophy1Button_mouse_exited"]
+[connection signal="pressed" from="Trophies/Trophy1Button" to="." method="_on_Trophy1Button_pressed"]
+[connection signal="mouse_entered" from="Trophies/Trophy2Button" to="." method="_on_Trophy2Button_mouse_entered"]
+[connection signal="mouse_exited" from="Trophies/Trophy2Button" to="." method="_on_Trophy2Button_mouse_exited"]
+[connection signal="pressed" from="Trophies/Trophy2Button" to="." method="_on_Trophy2Button_pressed"]
+[connection signal="mouse_entered" from="Trophies/Trophy3Button" to="." method="_on_Trophy3Button_mouse_entered"]
+[connection signal="mouse_exited" from="Trophies/Trophy3Button" to="." method="_on_Trophy3Button_mouse_exited"]
+[connection signal="pressed" from="Trophies/Trophy3Button" to="." method="_on_Trophy3Button_pressed"]
+[connection signal="pressed" from="NewConfirm/YesButton" to="." method="_on_YesButton_pressed"]
+[connection signal="pressed" from="NewConfirm/NoButton" to="." method="_on_NoButton_pressed"]
+[connection signal="mouse_entered" from="SodaStuff/SodaButton" to="." method="_on_SodaButton_mouse_entered"]
+[connection signal="mouse_exited" from="SodaStuff/SodaButton" to="." method="_on_SodaButton_mouse_exited"]
+[connection signal="pressed" from="SodaStuff/SodaButton" to="." method="_on_SodaButton_pressed"]
+[connection signal="mouse_entered" from="Options/CenterContainer/VBoxContainer/HBoxContainer/VolumeSlider" to="." method="_on_VolumeSlider_mouse_entered"]
+[connection signal="value_changed" from="Options/CenterContainer/VBoxContainer/HBoxContainer/VolumeSlider" to="." method="_on_VolumeSlider_value_changed"]
+[connection signal="mouse_entered" from="Options/CenterContainer/VBoxContainer/HBoxContainer4/CheckBoxMusic" to="." method="_on_CheckBoxMusic_mouse_entered"]
+[connection signal="pressed" from="Options/CenterContainer/VBoxContainer/HBoxContainer4/CheckBoxMusic" to="." method="_on_CheckBoxMusic_pressed"]
+[connection signal="mouse_entered" from="Options/CenterContainer/VBoxContainer/HBoxContainer2/CheckBox" to="." method="_on_CheckBox_mouse_entered"]
+[connection signal="pressed" from="Options/CenterContainer/VBoxContainer/HBoxContainer2/CheckBox" to="." method="_on_CheckBox_pressed"]
+[connection signal="mouse_entered" from="Options/CenterContainer/VBoxContainer/HBoxContainer3/CheckBoxBorder" to="." method="_on_CheckBoxBorder_mouse_entered"]
+[connection signal="pressed" from="Options/CenterContainer/VBoxContainer/HBoxContainer3/CheckBoxBorder" to="." method="_on_CheckBoxBorder_pressed"]
+[connection signal="mouse_entered" from="Options/BackButton" to="." method="_on_BackButton_mouse_entered"]
+[connection signal="mouse_exited" from="Options/BackButton" to="." method="_on_BackButton_mouse_exited"]
+[connection signal="pressed" from="Options/BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="TestSkipButton1" to="." method="_on_TestSkipButton1_pressed"]
+[connection signal="pressed" from="TestSkipButton2" to="." method="_on_TestSkipButton2_pressed"]
+[connection signal="pressed" from="TestSkipButton3" to="." method="_on_TestSkipButton3_pressed"]

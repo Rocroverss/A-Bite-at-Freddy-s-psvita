@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/sodaFail.ogg-0b7cb2e30b78acf4157ea1a26d449922.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/sodaFail.ogg"
+dest_files=[ "res://.import/sodaFail.ogg-0b7cb2e30b78acf4157ea1a26d449922.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

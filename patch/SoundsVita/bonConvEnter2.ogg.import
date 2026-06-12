@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bonConvEnter2.ogg-c5dd414f72f092eecc1f9d5de1a6312e.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/bonConvEnter2.ogg"
+dest_files=[ "res://.import/bonConvEnter2.ogg-c5dd414f72f092eecc1f9d5de1a6312e.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

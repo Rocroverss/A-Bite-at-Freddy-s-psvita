@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/blipp.ogg-4406a98949b8e0bb1c65d155995aea2a.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/blipp.ogg"
+dest_files=[ "res://.import/blipp.ogg-4406a98949b8e0bb1c65d155995aea2a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

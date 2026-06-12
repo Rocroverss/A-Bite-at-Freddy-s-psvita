@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/foodBite.ogg-f1a7977b6e011ae939d8309b21c797af.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/foodBite.ogg"
+dest_files=[ "res://.import/foodBite.ogg-f1a7977b6e011ae939d8309b21c797af.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

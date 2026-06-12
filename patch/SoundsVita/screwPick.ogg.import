@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/screwPick.ogg-11d5cd8bb6699beb5ab2196bddf8b366.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/screwPick.ogg"
+dest_files=[ "res://.import/screwPick.ogg-11d5cd8bb6699beb5ab2196bddf8b366.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

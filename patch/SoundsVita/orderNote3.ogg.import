@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/orderNote3.ogg-3639bc47f614819e84e9ab6bbce35c3a.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/orderNote3.ogg"
+dest_files=[ "res://.import/orderNote3.ogg-3639bc47f614819e84e9ab6bbce35c3a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

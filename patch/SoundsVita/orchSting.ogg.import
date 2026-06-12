@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/orchSting.ogg-a282c2795b46e3d54bdbd8e1344f98df.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/orchSting.ogg"
+dest_files=[ "res://.import/orchSting.ogg-a282c2795b46e3d54bdbd8e1344f98df.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

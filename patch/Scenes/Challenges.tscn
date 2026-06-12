@@ -1,0 +1,1723 @@
+[gd_scene load_steps=156 format=2]
+
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=1]
+[ext_resource path="res://SoundsVita/clickButton2.ogg" type="AudioStream" id=2]
+[ext_resource path="res://Fonts/LACONIC_LIGHT.OTF" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/Challenges.gd" type="Script" id=4]
+[ext_resource path="res://Sprites/Challenges/nextAI.png" type="Texture" id=5]
+[ext_resource path="res://Shaders/Grayscale.gdshader" type="Shader" id=6]
+[ext_resource path="res://Sprites/Challenges/chalFrame.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Challenges/fredChal0009.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Challenges/fredChal0002.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Challenges/fredChal0003.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Challenges/fredChal0010.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Challenges/fredChal0005.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Challenges/fredChal0004.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Challenges/fredChal0008.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Challenges/fredChal0006.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Challenges/fredChal0007.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Challenges/fredChal0001.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Challenges/bonChal0001.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Challenges/bonChal0005.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Challenges/bonChal0006.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Challenges/bonChal0007.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Challenges/bonChal0004.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Challenges/bonChal0002.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Challenges/bonChal0003.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Challenges/bonChal0008.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Challenges/bonChal0009.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Challenges/bonChal0010.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Challenges/chicChal0001.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Challenges/chicChal0003.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Challenges/chicChal0004.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Challenges/chicChal0005.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Challenges/chicChal0006.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Challenges/chicChal0002.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Challenges/chicChal0007.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Challenges/chicChal0008.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Challenges/chicChal0009.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Challenges/chicChal0010.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Challenges/foxChal0001.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Challenges/foxChal0002.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Challenges/foxChal0003.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Challenges/foxChal0004.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Challenges/foxChal0005.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Challenges/foxChal0007.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Challenges/foxChal0008.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Challenges/foxChal0010.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Challenges/foxChal0006.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Challenges/foxChal0009.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Challenges/tbChal0004.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Challenges/tbChal0005.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Challenges/tbChal0007.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Challenges/tbChal0009.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Challenges/tbChal0002.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Challenges/tbChal0001.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Challenges/tbChal0003.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Challenges/tbChal0006.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Challenges/tbChal0008.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Challenges/tbChal0010.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/UI/bitey0003.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/UI/bitey0002.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/UI/bitey0001.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/UI/bitey0006.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/UI/bitey0004.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/UI/bitey0005.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/UI/bitey0007.png" type="Texture" id=64]
+[ext_resource path="res://SoundsVita/bitey.ogg" type="AudioStream" id=65]
+[ext_resource path="res://Sprites/Challenges/foxChal0016.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/Challenges/foxChal0017.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/Challenges/foxChal0018.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/Challenges/foxChal0012.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/Challenges/foxChal0013.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/Challenges/foxChal0014.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/Challenges/foxChal0011.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/Challenges/foxChal0015.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/Challenges/foxChal0020.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/Challenges/foxChal0019.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/Challenges/tbChal0015.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/Challenges/fredChal0011.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/Challenges/tbChal0014.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/Challenges/fredChal0013.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/Challenges/fredChal0015.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/Challenges/fredChal0012.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/Challenges/tbChal0012.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/Challenges/fredChal0014.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/Challenges/tbChal0011.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/Challenges/tbChal0013.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward1_mini.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward4_mini.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/Challenges/bonChal0011.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/Challenges/bonChal0012.png" type="Texture" id=89]
+[ext_resource path="res://Sprites/Challenges/bonChal0013.png" type="Texture" id=90]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward6_mini.png" type="Texture" id=91]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward7_mini.png" type="Texture" id=92]
+[ext_resource path="res://Sprites/Challenges/bonChal0014.png" type="Texture" id=93]
+[ext_resource path="res://Sprites/Challenges/bonChal0015.png" type="Texture" id=94]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward5_mini.png" type="Texture" id=95]
+[ext_resource path="res://Sprites/Challenges/chicChal0011.png" type="Texture" id=96]
+[ext_resource path="res://Sprites/Challenges/chicChal0013.png" type="Texture" id=97]
+[ext_resource path="res://Sprites/Challenges/chicChal0014.png" type="Texture" id=98]
+[ext_resource path="res://Sprites/Challenges/chicChal0015.png" type="Texture" id=99]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward2_mini.png" type="Texture" id=100]
+[ext_resource path="res://Sprites/Challenges/chicChal0012.png" type="Texture" id=101]
+[ext_resource path="res://Shaders/BlurScreen.gdshader" type="Shader" id=102]
+[ext_resource path="res://Sprites/UI/Backdrops/bgrChallenge.png" type="Texture" id=103]
+[ext_resource path="res://Shaders/TVWarbleScreen.gdshader" type="Shader" id=104]
+[ext_resource path="res://Sprites/Extras/stary2.png" type="Texture" id=105]
+[ext_resource path="res://SoundsVita/Music/crime-mystery-01.ogg" type="AudioStream" id=106]
+[ext_resource path="res://SoundsVita/staticTv.ogg" type="AudioStream" id=107]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward20_mini.png" type="Texture" id=108]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward20001_mini.png" type="Texture" id=109]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward20003_mini.png" type="Texture" id=110]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward20004_mini.png" type="Texture" id=111]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward20002_mini.png" type="Texture" id=112]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward20005_mini.png" type="Texture" id=113]
+[ext_resource path="res://Sprites/Challenges/Rewards/reward8_mini.png" type="Texture" id=114]
+[ext_resource path="res://SoundsVita/rewardBoot.ogg" type="AudioStream" id=115]
+[ext_resource path="res://SoundsVita/rewardSnow.ogg" type="AudioStream" id=116]
+[ext_resource path="res://SoundsVita/rewardClock.ogg" type="AudioStream" id=117]
+[ext_resource path="res://SoundsVita/rewardBasket.ogg" type="AudioStream" id=118]
+[ext_resource path="res://SoundsVita/rewardFb.ogg" type="AudioStream" id=119]
+[ext_resource path="res://SoundsVita/rewardPuppets1.ogg" type="AudioStream" id=120]
+[ext_resource path="res://SoundsVita/rewardPuppets2.ogg" type="AudioStream" id=121]
+[ext_resource path="res://SoundsVita/rewardPaper.ogg" type="AudioStream" id=122]
+
+[sub_resource type="ShaderMaterial" id=28]
+resource_local_to_scene = true
+shader = ExtResource( 102 )
+shader_param/lod = 2.4
+
+[sub_resource type="ShaderMaterial" id=29]
+shader = ExtResource( 104 )
+shader_param/movement = 6.0
+shader_param/wave_speed = 1.2
+shader_param/wave_freq = 2.0
+shader_param/wave_width = 0.1
+
+[sub_resource type="Shader" id=34]
+code = "shader_type canvas_item;
+
+uniform int cell_amount = 30;
+uniform vec2 period = vec2(5., 10.);
+uniform sampler2D uv_off_tex : hint_black;
+uniform float speed = 5.0;
+// Speed 5.0 works well
+uniform float transparency : hint_range(0.0, 1.0);
+
+vec2 modulo(vec2 divident, vec2 divisor){
+	vec2 positiveDivident = mod(divident, divisor) + divisor;
+	return mod(positiveDivident, divisor);
+}
+
+vec2 random(vec2 value){
+	value = vec2( dot(value, vec2(127.1,311.7) ),
+				  dot(value, vec2(269.5,183.3) ) ) * TIME;
+	return -1.0 + 2.0 * fract(sin(value) * 43758.5453123);
+}
+
+float seamless_noise(vec2 uv, vec2 _period) {
+	uv = uv * float(cell_amount);
+	vec2 cellsMinimum = floor(uv);
+	vec2 cellsMaximum = ceil(uv);
+	vec2 uv_fract = fract(uv);
+	
+	cellsMinimum = modulo(cellsMinimum, _period);
+	cellsMaximum = modulo(cellsMaximum, _period);
+	
+	vec2 blur = smoothstep(0.0, 1.0, uv_fract);
+	
+	vec2 lowerLeftDirection = random(vec2(cellsMinimum.x, cellsMinimum.y));
+	vec2 lowerRightDirection = random(vec2(cellsMaximum.x, cellsMinimum.y));
+	vec2 upperLeftDirection = random(vec2(cellsMinimum.x, cellsMaximum.y));
+	vec2 upperRightDirection = random(vec2(cellsMaximum.x, cellsMaximum.y));
+	
+	vec2 fraction = fract(uv);
+	
+	return mix( mix( dot( lowerLeftDirection, fraction - vec2(0, 0) ),
+                     dot( lowerRightDirection, fraction - vec2(1, 0) ), blur.x),
+                mix( dot( upperLeftDirection, fraction - vec2(0, 1) ),
+                     dot( upperRightDirection, fraction - vec2(1, 1) ), blur.x), blur.y) * 0.8 + 0.5;
+}
+
+mat4 contrastMatrix( float _contrast ){
+	float t = ( 1.0 - _contrast ) / 2.0;
+    return mat4( 
+		vec4(_contrast, 0, 0, 0),
+		vec4(0, _contrast, 0, 0),
+		vec4(0, 0, _contrast, 0),
+		vec4(t, t, t, 1));
+}
+
+void fragment(){
+	//float noise = seamless_noise(UV, period);
+	//COLOR.rgb = vec3(noise);
+	//COLOR *= contrastMatrix(2.0);
+	//COLOR.a = 1.0;
+	
+	vec2 newUv = vec2(UV.x * 0.3, UV.y);
+	
+	COLOR = texture(uv_off_tex, newUv + (TIME * speed));
+	vec3 funColor = clamp(COLOR.rgb, 0.0, 0.1);
+	COLOR.a = mix(COLOR.a * funColor.r * 3.0, 0.0, transparency);
+}
+"
+
+[sub_resource type="OpenSimplexNoise" id=37]
+octaves = 2
+period = 3.5
+persistence = 0.05
+
+[sub_resource type="NoiseTexture" id=36]
+seamless = true
+noise = SubResource( 37 )
+
+[sub_resource type="ShaderMaterial" id=38]
+shader = SubResource( 34 )
+shader_param/cell_amount = 30
+shader_param/period = Vector2( 5, 10 )
+shader_param/speed = 1.5
+shader_param/transparency = 0.85
+shader_param/uv_off_tex = SubResource( 36 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.705882 )
+extra_spacing_char = 3
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 28
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 6
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 6 )
+shader_param/amount = 1.0
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 14 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 77 ), ExtResource( 81 ), ExtResource( 79 ), ExtResource( 83 ), ExtResource( 80 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=6]
+resource_name = "GoGrey"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=11]
+shader = ExtResource( 6 )
+shader_param/amount = 1.0
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 18 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 93 ), ExtResource( 94 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=9]
+resource_name = "GoGrey"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=12]
+shader = ExtResource( 6 )
+shader_param/amount = 1.0
+
+[sub_resource type="SpriteFrames" id=13]
+animations = [ {
+"frames": [ ExtResource( 28 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 96 ), ExtResource( 101 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=14]
+resource_name = "GoGrey"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=24]
+shader = ExtResource( 6 )
+shader_param/amount = 1.0
+
+[sub_resource type="SpriteFrames" id=17]
+animations = [ {
+"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 46 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 47 ), ExtResource( 45 ), ExtResource( 72 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 73 ), ExtResource( 73 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 75 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=18]
+resource_name = "GoGrey"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=19]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=25]
+shader = ExtResource( 6 )
+shader_param/amount = 1.0
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ ExtResource( 53 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 55 ), ExtResource( 50 ), ExtResource( 56 ), ExtResource( 51 ), ExtResource( 57 ), ExtResource( 84 ), ExtResource( 82 ), ExtResource( 85 ), ExtResource( 78 ), ExtResource( 76 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=22]
+resource_name = "GoGrey"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=23]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amount")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.705882 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("iconFrame:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=27]
+animations = [ {
+"frames": [ ExtResource( 60 ), ExtResource( 59 ), ExtResource( 58 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 61 ), ExtResource( 64 ) ],
+"loop": true,
+"name": "biting",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 60 ) ],
+"loop": true,
+"name": "default",
+"speed": 20.0
+} ]
+
+[sub_resource type="SpriteFrames" id=41]
+animations = [ {
+"frames": [ ExtResource( 109 ), ExtResource( 112 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 113 ) ],
+"loop": false,
+"name": "default",
+"speed": 0.0
+} ]
+
+[sub_resource type="Animation" id=39]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "roto"
+length = 2.4
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1.2, 2.4 ),
+"transitions": PoolRealArray( 2, 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.6, 0.6 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 360.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1.2, 2.4 ),
+"transitions": PoolRealArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 0.909804, 0.505882, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Challenges" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="BgrSprite" type="Sprite" parent="."]
+modulate = Color( 0.6, 0.6, 0.6, 1 )
+position = Vector2( 484, 274 )
+texture = ExtResource( 103 )
+
+[node name="BlurRect" type="ColorRect" parent="."]
+material = SubResource( 28 )
+margin_right = 960.0
+margin_bottom = 544.0
+mouse_filter = 2
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="testTV" type="ColorRect" parent="BackBufferCopy"]
+material = SubResource( 29 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="StaticShad" type="ColorRect" parent="."]
+material = SubResource( 38 )
+margin_right = 960.0
+margin_bottom = 544.0
+mouse_filter = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -479.0
+margin_top = -266.0
+margin_right = 315.0
+margin_bottom = 814.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="SelLabel" type="Label" parent="CenterContainer"]
+visible = false
+margin_left = 230.0
+margin_top = 516.0
+margin_right = 563.0
+margin_bottom = 564.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = ">                  <"
+align = 1
+valign = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 172.0
+margin_top = 178.0
+margin_right = 622.0
+margin_bottom = 902.0
+rect_min_size = Vector2( 450, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ChalButton" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 450.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton"]
+margin_right = 420.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Custom"
+valign = 1
+
+[node name="ChalButton2" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 104.0
+margin_right = 450.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton2"]
+margin_right = 420.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Basket Hunt"
+valign = 1
+
+[node name="ChalButton3" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 208.0
+margin_right = 450.0
+margin_bottom = 308.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton3"]
+margin_right = 447.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Haunting Roulette"
+valign = 1
+
+[node name="ChalButton4" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 312.0
+margin_right = 450.0
+margin_bottom = 412.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton4"]
+margin_right = 420.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Cold Kitchen"
+valign = 1
+
+[node name="ChalButton5" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 416.0
+margin_right = 450.0
+margin_bottom = 516.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton5"]
+margin_right = 420.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Out of Service"
+valign = 1
+
+[node name="ChalButton6" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 520.0
+margin_right = 450.0
+margin_bottom = 620.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton6"]
+margin_right = 420.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Lunch Rush"
+valign = 1
+
+[node name="ChalButton7" type="Button" parent="CenterContainer/VBoxContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 624.0
+margin_right = 450.0
+margin_bottom = 724.0
+rect_min_size = Vector2( 0, 100 )
+focus_mode = 0
+mouse_filter = 2
+size_flags_horizontal = 3
+
+[node name="BeginLabel" type="Label" parent="CenterContainer/VBoxContainer/ChalButton7"]
+margin_right = 420.0
+margin_bottom = 100.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Full Course"
+valign = 1
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="CenterContainer"]
+stream = ExtResource( 2 )
+volume_db = -4.0
+
+[node name="CustomLabel" type="Label" parent="."]
+margin_left = 49.0
+margin_top = 53.0
+margin_right = 745.0
+margin_bottom = 171.0
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Challenges - Custom"
+valign = 1
+
+[node name="ExitButton" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 6.0
+margin_top = 479.0
+margin_right = 192.0
+margin_bottom = 597.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 1
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="ExitButton"]
+margin_left = 49.0
+margin_right = 469.0
+margin_bottom = 118.0
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Exit"
+valign = 1
+
+[node name="ReadyButton" type="Button" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 828.0
+margin_top = 488.0
+margin_right = 1036.0
+margin_bottom = 606.0
+rect_min_size = Vector2( 0, 118 )
+focus_mode = 0
+mouse_filter = 1
+size_flags_horizontal = 3
+enabled_focus_mode = 0
+
+[node name="BeginLabel" type="Label" parent="ReadyButton"]
+margin_right = 208.0
+margin_bottom = 118.0
+rect_scale = Vector2( 0.5, 0.5 )
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "Ready"
+align = 1
+valign = 1
+
+[node name="DescLab" type="Label" parent="."]
+margin_left = 157.0
+margin_top = 483.0
+margin_right = 1511.0
+margin_bottom = 583.0
+rect_min_size = Vector2( 0, 100 )
+rect_scale = Vector2( 0.5, 0.5 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 26 )
+text = "INSERT TEXT HERE"
+align = 1
+valign = 1
+
+[node name="EnemyDisplay" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="AIFred" type="Label" parent="EnemyDisplay"]
+margin_left = 940.0
+margin_top = 460.0
+margin_right = 1140.0
+margin_bottom = 540.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="AIBon" type="Label" parent="EnemyDisplay"]
+margin_left = 1200.0
+margin_top = 460.0
+margin_right = 1400.0
+margin_bottom = 540.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="AIChic" type="Label" parent="EnemyDisplay"]
+margin_left = 1460.0
+margin_top = 460.0
+margin_right = 1660.0
+margin_bottom = 540.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="AIFox" type="Label" parent="EnemyDisplay"]
+margin_left = 1070.0
+margin_top = 899.0
+margin_right = 1270.0
+margin_bottom = 979.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="AITB" type="Label" parent="EnemyDisplay"]
+margin_left = 1330.0
+margin_top = 899.0
+margin_right = 1530.0
+margin_bottom = 979.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0.2, 0.184314, 0.129412, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "0"
+align = 1
+valign = 1
+
+[node name="FredLab" type="Label" parent="EnemyDisplay"]
+margin_left = 940.0
+margin_top = 85.0
+margin_right = 1140.0
+margin_bottom = 185.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Freddy"
+align = 1
+valign = 1
+
+[node name="FredLab2" type="Label" parent="EnemyDisplay"]
+margin_left = 1200.0
+margin_top = 85.0
+margin_right = 1400.0
+margin_bottom = 185.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Bonnie"
+align = 1
+valign = 1
+
+[node name="FredLab3" type="Label" parent="EnemyDisplay"]
+margin_left = 1460.0
+margin_top = 85.0
+margin_right = 1660.0
+margin_bottom = 185.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Chica"
+align = 1
+valign = 1
+
+[node name="FredLab4" type="Label" parent="EnemyDisplay"]
+margin_left = 1070.0
+margin_top = 524.0
+margin_right = 1270.0
+margin_bottom = 624.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Foxy"
+align = 1
+valign = 1
+
+[node name="FredLab5" type="Label" parent="EnemyDisplay"]
+margin_left = 1329.0
+margin_top = 524.0
+margin_right = 1531.0
+margin_bottom = 624.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Threadbear"
+align = 1
+valign = 1
+
+[node name="FredIcon" type="AnimatedSprite" parent="EnemyDisplay"]
+modulate = Color( 1, 1, 1, 0.705882 )
+material = SubResource( 5 )
+position = Vector2( 1040, 302 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 3 )
+
+[node name="iconFrame" type="Sprite" parent="EnemyDisplay/FredIcon"]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyDisplay/FredIcon"]
+anims/GoGrey = SubResource( 6 )
+anims/RESET = SubResource( 7 )
+
+[node name="BonIcon" type="AnimatedSprite" parent="EnemyDisplay"]
+modulate = Color( 1, 1, 1, 0.705882 )
+material = SubResource( 11 )
+position = Vector2( 1300, 302 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 8 )
+
+[node name="iconFrame" type="Sprite" parent="EnemyDisplay/BonIcon"]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyDisplay/BonIcon"]
+anims/GoGrey = SubResource( 9 )
+anims/RESET = SubResource( 10 )
+
+[node name="ChicIcon" type="AnimatedSprite" parent="EnemyDisplay"]
+modulate = Color( 1, 1, 1, 0.705882 )
+material = SubResource( 12 )
+position = Vector2( 1560, 302 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 13 )
+
+[node name="iconFrame" type="Sprite" parent="EnemyDisplay/ChicIcon"]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyDisplay/ChicIcon"]
+anims/GoGrey = SubResource( 14 )
+anims/RESET = SubResource( 15 )
+
+[node name="FoxIcon" type="AnimatedSprite" parent="EnemyDisplay"]
+modulate = Color( 1, 1, 1, 0.705882 )
+material = SubResource( 24 )
+position = Vector2( 1170, 741 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 17 )
+
+[node name="iconFrame" type="Sprite" parent="EnemyDisplay/FoxIcon"]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyDisplay/FoxIcon"]
+anims/GoGrey = SubResource( 18 )
+anims/RESET = SubResource( 19 )
+
+[node name="TbIcon" type="AnimatedSprite" parent="EnemyDisplay"]
+modulate = Color( 1, 1, 1, 0.705882 )
+material = SubResource( 25 )
+position = Vector2( 1430, 741 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 21 )
+
+[node name="iconFrame" type="Sprite" parent="EnemyDisplay/TbIcon"]
+modulate = Color( 1, 1, 1, 0 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyDisplay/TbIcon"]
+anims/GoGrey = SubResource( 22 )
+anims/RESET = SubResource( 23 )
+
+[node name="AIButtons" type="Control" parent="EnemyDisplay"]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="FredAIButtonR" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1086.0
+margin_top = 464.0
+margin_right = 1134.0
+margin_bottom = 536.0
+focus_mode = 0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/FredAIButtonR"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+
+[node name="FredAIButtonL" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 946.0
+margin_top = 464.0
+margin_right = 994.0
+margin_bottom = 536.0
+focus_mode = 0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/FredAIButtonL"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="BonAIButtonR" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1346.0
+margin_top = 464.0
+margin_right = 1394.0
+margin_bottom = 536.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/BonAIButtonR"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+
+[node name="BonAIButtonL" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1206.0
+margin_top = 464.0
+margin_right = 1254.0
+margin_bottom = 536.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/BonAIButtonL"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="ChicAIButtonR" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1606.0
+margin_top = 464.0
+margin_right = 1654.0
+margin_bottom = 536.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/ChicAIButtonR"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+
+[node name="ChicAIButtonL" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1466.0
+margin_top = 464.0
+margin_right = 1514.0
+margin_bottom = 536.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/ChicAIButtonL"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="FoxAIButtonR" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1216.0
+margin_top = 903.0
+margin_right = 1264.0
+margin_bottom = 975.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/FoxAIButtonR"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+
+[node name="FoxAIButtonL" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1076.0
+margin_top = 903.0
+margin_right = 1124.0
+margin_bottom = 975.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/FoxAIButtonL"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="TbAIButtonR" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1476.0
+margin_top = 903.0
+margin_right = 1524.0
+margin_bottom = 975.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/TbAIButtonR"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+
+[node name="TbAIButtonL" type="Button" parent="EnemyDisplay/AIButtons"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1336.0
+margin_top = 903.0
+margin_right = 1384.0
+margin_bottom = 975.0
+action_mode = 0
+
+[node name="AIsprite" type="Sprite" parent="EnemyDisplay/AIButtons/TbAIButtonL"]
+position = Vector2( 24, 36 )
+texture = ExtResource( 5 )
+flip_h = true
+
+[node name="BiteySpritey" type="AnimatedSprite" parent="."]
+position = Vector2( 27, 78 )
+scale = Vector2( 0.65, 0.65 )
+frames = SubResource( 27 )
+flip_h = true
+
+[node name="BiteButton" type="Button" parent="BiteySpritey"]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -23.0
+margin_top = -28.0
+margin_right = 26.0
+margin_bottom = 28.0
+focus_mode = 0
+action_mode = 0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="BiteySpritey"]
+stream = ExtResource( 65 )
+volume_db = -6.0
+pitch_scale = 1.05
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_left = 884.0
+margin_top = 31.0
+margin_right = 1034.0
+margin_bottom = 521.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_constants/vseparation = 8
+
+[node name="Reward1" type="TextureRect" parent="GridContainer"]
+margin_right = 37.0
+margin_bottom = 37.0
+texture = ExtResource( 86 )
+
+[node name="bootButton" type="Button" parent="GridContainer/Reward1"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="bootSound" type="AudioStreamPlayer" parent="GridContainer/Reward1"]
+stream = ExtResource( 115 )
+volume_db = -8.0
+
+[node name="Reward2" type="TextureRect" parent="GridContainer"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 45.0
+margin_right = 37.0
+margin_bottom = 82.0
+texture = ExtResource( 100 )
+
+[node name="BasketSprite" type="AnimatedSprite" parent="GridContainer/Reward2"]
+frames = SubResource( 41 )
+centered = false
+
+[node name="basketButton" type="Button" parent="GridContainer/Reward2"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="basketSound" type="AudioStreamPlayer" parent="GridContainer/Reward2"]
+stream = ExtResource( 118 )
+volume_db = -8.0
+
+[node name="Reward3" type="TextureRect" parent="GridContainer"]
+margin_top = 90.0
+margin_right = 37.0
+margin_bottom = 127.0
+texture = ExtResource( 87 )
+
+[node name="snowButton" type="Button" parent="GridContainer/Reward3"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="snowSound" type="AudioStreamPlayer" parent="GridContainer/Reward3"]
+stream = ExtResource( 116 )
+volume_db = -8.0
+
+[node name="Reward4" type="TextureRect" parent="GridContainer"]
+margin_top = 135.0
+margin_right = 37.0
+margin_bottom = 172.0
+texture = ExtResource( 91 )
+
+[node name="puppets1Button" type="Button" parent="GridContainer/Reward4"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="puppets1Sound" type="AudioStreamPlayer" parent="GridContainer/Reward4"]
+stream = ExtResource( 120 )
+volume_db = -8.0
+pitch_scale = 1.25
+
+[node name="Reward5" type="TextureRect" parent="GridContainer"]
+margin_top = 180.0
+margin_right = 37.0
+margin_bottom = 217.0
+texture = ExtResource( 95 )
+
+[node name="clockButton" type="Button" parent="GridContainer/Reward5"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="clockSound" type="AudioStreamPlayer" parent="GridContainer/Reward5"]
+stream = ExtResource( 117 )
+volume_db = -8.0
+
+[node name="Reward6" type="TextureRect" parent="GridContainer"]
+margin_top = 225.0
+margin_right = 37.0
+margin_bottom = 262.0
+texture = ExtResource( 92 )
+
+[node name="puppets2Button" type="Button" parent="GridContainer/Reward6"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="puppets2Sound" type="AudioStreamPlayer" parent="GridContainer/Reward6"]
+stream = ExtResource( 121 )
+volume_db = -8.0
+
+[node name="ColorRect6" type="ColorRect" parent="GridContainer"]
+visible = false
+margin_right = 150.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 150, 150 )
+color = Color( 0.0431373, 0.490196, 0.564706, 1 )
+
+[node name="star" type="Sprite" parent="."]
+position = Vector2( 320, 85 )
+texture = ExtResource( 105 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="star"]
+autoplay = "roto"
+anims/RESET = SubResource( 39 )
+anims/roto = SubResource( 40 )
+
+[node name="ChallengeMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 106 )
+volume_db = -21.0
+
+[node name="StaticSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 107 )
+volume_db = -28.0
+pitch_scale = 0.4
+autoplay = true
+
+[node name="Reward20" type="TextureRect" parent="."]
+margin_left = 856.0
+margin_top = 384.0
+margin_right = 932.0
+margin_bottom = 459.0
+texture = ExtResource( 108 )
+
+[node name="fbButton" type="Button" parent="Reward20"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="fbSound" type="AudioStreamPlayer" parent="Reward20"]
+stream = ExtResource( 119 )
+volume_db = -8.0
+
+[node name="Reward0" type="TextureRect" parent="."]
+margin_left = 105.0
+margin_top = 476.0
+margin_right = 255.0
+margin_bottom = 626.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 114 )
+
+[node name="paperButton" type="Button" parent="Reward0"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="paperSound" type="AudioStreamPlayer" parent="Reward0"]
+stream = ExtResource( 122 )
+volume_db = -8.0
+
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton" to="." method="_on_ChalButton_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton" to="." method="_on_ChalButton_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton" to="." method="_on_ChalButton_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton2" to="." method="_on_ChalButton2_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton2" to="." method="_on_ChalButton2_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton2" to="." method="_on_ChalButton2_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton3" to="." method="_on_ChalButton3_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton3" to="." method="_on_ChalButton3_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton3" to="." method="_on_ChalButton3_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton4" to="." method="_on_ChalButton4_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton4" to="." method="_on_ChalButton4_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton4" to="." method="_on_ChalButton4_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton5" to="." method="_on_ChalButton5_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton5" to="." method="_on_ChalButton5_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton5" to="." method="_on_ChalButton5_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton6" to="." method="_on_ChalButton6_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton6" to="." method="_on_ChalButton6_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton6" to="." method="_on_ChalButton6_pressed"]
+[connection signal="mouse_entered" from="CenterContainer/VBoxContainer/ChalButton7" to="." method="_on_ChalButton7_mouse_entered"]
+[connection signal="mouse_exited" from="CenterContainer/VBoxContainer/ChalButton7" to="." method="_on_ChalButton7_mouse_exited"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ChalButton7" to="." method="_on_ChalButton7_pressed"]
+[connection signal="mouse_entered" from="ExitButton" to="." method="_on_ExitButton_mouse_entered"]
+[connection signal="mouse_exited" from="ExitButton" to="." method="_on_ExitButton_mouse_exited"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_ExitButton_pressed"]
+[connection signal="mouse_entered" from="ReadyButton" to="." method="_on_ReadyButton_mouse_entered"]
+[connection signal="mouse_exited" from="ReadyButton" to="." method="_on_ReadyButton_mouse_exited"]
+[connection signal="pressed" from="ReadyButton" to="." method="_on_ReadyButton_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/FredAIButtonR" to="." method="_on_FredAIButtonR_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/FredAIButtonL" to="." method="_on_FredAIButtonL_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/BonAIButtonR" to="." method="_on_BonAIButtonR_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/BonAIButtonL" to="." method="_on_BonAIButtonL_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/ChicAIButtonR" to="." method="_on_ChicAIButtonR_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/ChicAIButtonL" to="." method="_on_ChicAIButtonL_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/FoxAIButtonR" to="." method="_on_FoxAIButtonR_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/FoxAIButtonL" to="." method="_on_FoxAIButtonL_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/TbAIButtonR" to="." method="_on_TbAIButtonR_pressed"]
+[connection signal="pressed" from="EnemyDisplay/AIButtons/TbAIButtonL" to="." method="_on_TbAIButtonL_pressed"]
+[connection signal="pressed" from="BiteySpritey/BiteButton" to="." method="_on_BiteButton_pressed"]
+[connection signal="pressed" from="GridContainer/Reward1/bootButton" to="." method="_on_bootButton_pressed"]
+[connection signal="pressed" from="GridContainer/Reward2/basketButton" to="." method="_on_basketButton_pressed"]
+[connection signal="pressed" from="GridContainer/Reward3/snowButton" to="." method="_on_snowButton_pressed"]
+[connection signal="pressed" from="GridContainer/Reward4/puppets1Button" to="." method="_on_puppets1Button_pressed"]
+[connection signal="pressed" from="GridContainer/Reward5/clockButton" to="." method="_on_clockButton_pressed"]
+[connection signal="pressed" from="GridContainer/Reward6/puppets2Button" to="." method="_on_puppets2Button_pressed"]
+[connection signal="pressed" from="Reward20/fbButton" to="." method="_on_fbButton_pressed"]
+[connection signal="pressed" from="Reward0/paperButton" to="." method="_on_paperButton_pressed"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/partyHorn2.ogg-73198fda18aab8f5c96b475b82f8d99f.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/partyHorn2.ogg"
+dest_files=[ "res://.import/partyHorn2.ogg-73198fda18aab8f5c96b475b82f8d99f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

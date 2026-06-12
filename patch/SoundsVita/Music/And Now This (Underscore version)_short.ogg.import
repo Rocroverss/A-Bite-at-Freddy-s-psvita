@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/And Now This (Underscore version)_short.ogg-40982adcefe43b756c47cab340f2a321.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/Music/And Now This (Underscore version)_short.ogg"
+dest_files=[ "res://.import/And Now This (Underscore version)_short.ogg-40982adcefe43b756c47cab340f2a321.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

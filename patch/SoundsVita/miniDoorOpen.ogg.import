@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/miniDoorOpen.ogg-70c08c0154cfc55945ed105fe8f26a8c.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/miniDoorOpen.ogg"
+dest_files=[ "res://.import/miniDoorOpen.ogg-70c08c0154cfc55945ed105fe8f26a8c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

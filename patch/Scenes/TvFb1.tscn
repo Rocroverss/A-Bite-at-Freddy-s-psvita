@@ -1,0 +1,19 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/Office/fbTv0001.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Office/fbTv0002.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Office/fbTv0004.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Office/fbTv0003.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Office/fbTv0005.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[node name="TvFb1" type="AnimatedSprite"]
+position = Vector2( 2688, 381 )
+frames = SubResource( 1 )

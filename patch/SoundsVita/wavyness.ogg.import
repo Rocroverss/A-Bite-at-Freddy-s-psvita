@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/wavyness.ogg-c4276f17add9f49838389fae9655516f.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/wavyness.ogg"
+dest_files=[ "res://.import/wavyness.ogg-c4276f17add9f49838389fae9655516f.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

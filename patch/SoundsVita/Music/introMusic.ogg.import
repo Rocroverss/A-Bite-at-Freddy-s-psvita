@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/introMusic.ogg-a2289cf5ebb5342226bc00afc10e3942.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/Music/introMusic.ogg"
+dest_files=[ "res://.import/introMusic.ogg-a2289cf5ebb5342226bc00afc10e3942.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Fansndsn23.ogg-8c96505ebe638d49d168ceb38dce12b0.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/Fansndsn23.ogg"
+dest_files=[ "res://.import/Fansndsn23.ogg-8c96505ebe638d49d168ceb38dce12b0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

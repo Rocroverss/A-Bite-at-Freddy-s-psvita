@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mgr4.ogg-9aba7a4a60322ad781e4299fe8629e95.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/mgr4.ogg"
+dest_files=[ "res://.import/mgr4.ogg-9aba7a4a60322ad781e4299fe8629e95.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

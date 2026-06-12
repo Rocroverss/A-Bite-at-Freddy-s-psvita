@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/enterConv.ogg-df2aa0216a410fc4d87237d54ee1ee2d.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/enterConv.ogg"
+dest_files=[ "res://.import/enterConv.ogg-df2aa0216a410fc4d87237d54ee1ee2d.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

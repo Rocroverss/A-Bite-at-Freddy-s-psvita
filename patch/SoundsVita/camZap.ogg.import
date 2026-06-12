@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/camZap.ogg-993ad33441725657eebe77f784a59095.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/camZap.ogg"
+dest_files=[ "res://.import/camZap.ogg-993ad33441725657eebe77f784a59095.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

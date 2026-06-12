@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/roboTalk1.ogg-1b8ff9b8fe322b9b44bd5e6c297f4da3.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/roboTalk1.ogg"
+dest_files=[ "res://.import/roboTalk1.ogg-1b8ff9b8fe322b9b44bd5e6c297f4da3.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

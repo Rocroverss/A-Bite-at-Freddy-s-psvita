@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/typeDing.ogg-3a7b39e8062e16a2973178f6e8c4f946.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/typeDing.ogg"
+dest_files=[ "res://.import/typeDing.ogg-3a7b39e8062e16a2973178f6e8c4f946.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

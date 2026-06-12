@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/whoKnocks.ogg-274d1a7752dcb277786fc084af5aa72d.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/whoKnocks.ogg"
+dest_files=[ "res://.import/whoKnocks.ogg-274d1a7752dcb277786fc084af5aa72d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

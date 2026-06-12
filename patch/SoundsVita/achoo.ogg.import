@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/achoo.ogg-33c88ffb2aaf56b4c64a60126e1480f1.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/achoo.ogg"
+dest_files=[ "res://.import/achoo.ogg-33c88ffb2aaf56b4c64a60126e1480f1.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

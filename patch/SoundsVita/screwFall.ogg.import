@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/screwFall.ogg-ae0c48622e72a1647fc01fd3b2d11a5c.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/screwFall.ogg"
+dest_files=[ "res://.import/screwFall.ogg-ae0c48622e72a1647fc01fd3b2d11a5c.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

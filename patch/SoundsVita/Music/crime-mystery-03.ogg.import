@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/crime-mystery-03.ogg-c64bb36cc581f47b1fc5b51cf580dfd9.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/Music/crime-mystery-03.ogg"
+dest_files=[ "res://.import/crime-mystery-03.ogg-c64bb36cc581f47b1fc5b51cf580dfd9.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

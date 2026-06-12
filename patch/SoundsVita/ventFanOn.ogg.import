@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ventFanOn.ogg-2e0cef0c2cf546107bea2a82c0492161.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/ventFanOn.ogg"
+dest_files=[ "res://.import/ventFanOn.ogg-2e0cef0c2cf546107bea2a82c0492161.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

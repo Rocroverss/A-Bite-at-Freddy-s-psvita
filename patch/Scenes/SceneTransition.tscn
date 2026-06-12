@@ -1,0 +1,571 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Scripts/SceneTransition.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/UI/loadWheel.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/UI/Load/loadBack1.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/LACONIC_LIGHT.OTF" type="DynamicFontData" id=5]
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=6]
+[ext_resource path="res://Sprites/UI/Load/loadBack2.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/UI/Load/loadBack3.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/UI/Load/loadBack4.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/UI/Load/loadBack5.png" type="Texture" id=11]
+[ext_resource path="res://Shaders/Overlay.gdshader" type="Shader" id=17]
+
+[sub_resource type="SpriteFrames" id=8]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ) ],
+"loop": true,
+"name": "5",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=6]
+size = 36
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 52
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 6 )
+
+[sub_resource type="ShaderMaterial" id=9]
+shader = ExtResource( 17 )
+shader_param/satAmt = 0.68
+
+[sub_resource type="DynamicFont" id=10]
+size = 24
+outline_size = 4
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 1
+font_data = ExtResource( 5 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "BiteOpen"
+length = 4.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Bites/BiteTop:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 960, 480 ), Vector2( 960, -380 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Bites/BiteBottom:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 960, 600 ), Vector2( 960, 1460 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Bites:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Bites:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ColorRect/LoadSprite:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ColorRect/BackSprite:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect/BackSprite:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 960, 450 ), Vector2( 960, 540 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Bites/BiteRect:rect_position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, -540 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Bites/BiteRect2:rect_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 540 ), Vector2( 0, 1080 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ColorRect/LoadSprite:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2, 2.4 ),
+"transitions": PoolRealArray( -2, -2, 0 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/10/type = "method"
+tracks/10/path = NodePath(".")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 4.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "StartLoad"
+} ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "Fade"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "FadeIn"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 0 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "FadedIn"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "FadeOut"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "FadedOut"
+} ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("AnimationPlayer")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [ "RESET" ],
+"method": "play"
+} ]
+}
+
+[sub_resource type="Animation" id=2]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Bites/BiteTop:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 960, 470 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Bites/BiteBottom:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 960, 610 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Bites:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Bites:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ColorRect/LoadSprite:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ColorRect/BackSprite:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ColorRect/BackSprite:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 960, 540 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Bites/BiteRect:rect_position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Bites/BiteRect2:rect_position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 540 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("ColorRect/LoadSprite:modulate")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="SceneTransition" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="BackSprite" type="AnimatedSprite" parent="ColorRect"]
+visible = false
+position = Vector2( 960, 540 )
+frames = SubResource( 8 )
+animation = "5"
+
+[node name="backGrad" type="Sprite" parent="ColorRect/BackSprite"]
+visible = false
+
+[node name="Fred" type="Sprite" parent="ColorRect/BackSprite"]
+visible = false
+position = Vector2( -270, -350 )
+
+[node name="Bon" type="Sprite" parent="ColorRect/BackSprite"]
+visible = false
+position = Vector2( 563, -235 )
+
+[node name="Chic" type="Sprite" parent="ColorRect/BackSprite"]
+visible = false
+position = Vector2( 617, 46 )
+
+[node name="Fox" type="Sprite" parent="ColorRect/BackSprite"]
+visible = false
+position = Vector2( -681, -123 )
+
+[node name="Tb" type="Sprite" parent="ColorRect/BackSprite"]
+visible = false
+position = Vector2( -615, 292 )
+
+[node name="WarnLab2" type="Label" parent="ColorRect/BackSprite"]
+margin_left = -960.0
+margin_top = 386.0
+margin_right = 960.0
+margin_bottom = 540.0
+rect_min_size = Vector2( 0, 150 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 6 )
+text = "Let's get to work."
+align = 1
+valign = 1
+
+[node name="WarnLab1" type="Label" parent="ColorRect/BackSprite"]
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = -386.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 7 )
+text = "ORDER 1"
+align = 1
+valign = 1
+
+[node name="ColdBuffer" type="BackBufferCopy" parent="ColorRect/BackSprite"]
+visible = false
+position = Vector2( -960, -540 )
+z_index = 12
+copy_mode = 2
+
+[node name="ColdRect" type="ColorRect" parent="ColorRect/BackSprite/ColdBuffer"]
+material = SubResource( 9 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 1720.0
+margin_bottom = 880.0
+mouse_filter = 2
+color = Color( 0.4, 0.606667, 0.8, 1 )
+
+[node name="LoadSprite" type="Sprite" parent="ColorRect"]
+visible = false
+position = Vector2( 1842, 975 )
+z_as_relative = false
+texture = ExtResource( 2 )
+
+[node name="WarnLab3" type="Label" parent="ColorRect/LoadSprite"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -325.0
+margin_top = -62.0
+margin_right = -10.0
+margin_bottom = 92.0
+rect_min_size = Vector2( 0, 150 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 10 )
+text = "Loading, stay put!"
+align = 2
+valign = 1
+
+[node name="LoadBar" type="ColorRect" parent="ColorRect/LoadSprite"]
+visible = false
+margin_right = 6.0
+margin_bottom = 29.0
+
+[node name="Bites" type="Node2D" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="BiteRect" type="ColorRect" parent="Bites"]
+margin_right = 1920.0
+margin_bottom = 540.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="BiteRect2" type="ColorRect" parent="Bites"]
+margin_top = 540.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="BiteTop" type="Sprite" parent="Bites"]
+visible = false
+position = Vector2( 960, 470 )
+z_index = 1
+
+[node name="BiteBottom" type="Sprite" parent="Bites"]
+visible = false
+position = Vector2( 960, 610 )
+rotation = -3.14159
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/BiteOpen = SubResource( 5 )
+anims/Fade = SubResource( 1 )
+anims/FadeIn = SubResource( 3 )
+anims/FadeOut = SubResource( 4 )
+anims/RESET = SubResource( 2 )

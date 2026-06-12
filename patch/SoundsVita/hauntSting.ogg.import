@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hauntSting.ogg-323b8e7354db9a2044bee37a62b99ecc.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/hauntSting.ogg"
+dest_files=[ "res://.import/hauntSting.ogg-323b8e7354db9a2044bee37a62b99ecc.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

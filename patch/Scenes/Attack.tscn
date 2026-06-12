@@ -1,0 +1,374 @@
+[gd_scene load_steps=93 format=2]
+
+[ext_resource path="res://Scripts/Attack.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0031.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0032.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0033.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0021.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0024.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0034.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0035.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0036.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0022.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0027.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0030.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0023.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0026.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0025.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0028.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0029.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0007.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0002.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0003.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0004.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0005.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0006.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0001.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0015.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0016.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0017.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0018.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0019.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0020.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0012.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0013.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0008.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0010.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0009.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0011.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0014.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0049.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0075.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0048.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0057.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0070.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0045.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0059.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0054.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0060.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0072.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0064.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0056.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0068.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0043.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0073.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0038.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0037.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0047.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0071.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0050.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0051.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0067.png" type="Texture" id=59]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0053.png" type="Texture" id=60]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0069.png" type="Texture" id=61]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0044.png" type="Texture" id=62]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0062.png" type="Texture" id=63]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0063.png" type="Texture" id=64]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0052.png" type="Texture" id=65]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0041.png" type="Texture" id=66]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0042.png" type="Texture" id=67]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0065.png" type="Texture" id=68]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0066.png" type="Texture" id=69]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0058.png" type="Texture" id=70]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0055.png" type="Texture" id=71]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0074.png" type="Texture" id=72]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0039.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0040.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0046.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/Cutscenes/Attack/iAttac0061.png" type="Texture" id=76]
+[ext_resource path="res://Shaders/BlurScreen.gdshader" type="Shader" id=77]
+[ext_resource path="res://Shaders/Warpy.gdshader" type="Shader" id=78]
+[ext_resource path="res://SoundsVita/MaxSpook.ogg" type="AudioStream" id=79]
+[ext_resource path="res://SoundsVita/lightbuzzd.ogg" type="AudioStream" id=80]
+[ext_resource path="res://SoundsVita/attackBreak.ogg" type="AudioStream" id=81]
+[ext_resource path="res://SoundsVita/orchSting.ogg" type="AudioStream" id=82]
+[ext_resource path="res://SoundsVita/Music/introSting.ogg" type="AudioStream" id=83]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 18 ), ExtResource( 33 ), ExtResource( 35 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 37 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 6 ), ExtResource( 15 ), ExtResource( 14 ), ExtResource( 11 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 54 ), ExtResource( 53 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 51 ), ExtResource( 62 ), ExtResource( 43 ), ExtResource( 75 ), ExtResource( 55 ), ExtResource( 40 ), ExtResource( 38 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 65 ), ExtResource( 60 ), ExtResource( 45 ), ExtResource( 71 ), ExtResource( 49 ), ExtResource( 41 ), ExtResource( 70 ), ExtResource( 44 ), ExtResource( 46 ), ExtResource( 76 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 48 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 59 ), ExtResource( 50 ), ExtResource( 61 ), ExtResource( 42 ), ExtResource( 56 ), ExtResource( 47 ), ExtResource( 52 ), ExtResource( 72 ), ExtResource( 39 ) ],
+"loop": false,
+"name": "attack",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 24 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=2]
+resource_name = "Flicker"
+length = 1.2
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 0.5, 0.5, -2, -2, 0.5 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0.313726 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 1.2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "StartAnim"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -80.0, -80.0, -14.0, -32.0, -14.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AudioStreamPlayer:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -8.0 ]
+}
+
+[sub_resource type="OpenSimplexNoise" id=7]
+octaves = 4
+period = 25.0
+persistence = 0.25
+lacunarity = 1.0
+
+[sub_resource type="NoiseTexture" id=12]
+noise = SubResource( 7 )
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 78 )
+shader_param/amt = 0.0
+shader_param/distortTex = SubResource( 12 )
+
+[sub_resource type="Animation" id=9]
+resource_name = "Distort"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amt")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 0.0, 0.4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../BackBufferCopy/BlurRect:material:shader_param/lod")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 0.0, 5.0 ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "EndAttack"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../OutRect:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../FlickRect/AudioStreamPlayer:volume_db")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2.5, 4 ),
+"transitions": PoolRealArray( 1, 2, 1 ),
+"update": 0,
+"values": [ -14.0, -30.0, -80.0 ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amt")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../BackBufferCopy/BlurRect:material:shader_param/lod")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../OutRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../FlickRect/AudioStreamPlayer:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -80.0 ]
+}
+
+[sub_resource type="ShaderMaterial" id=6]
+resource_local_to_scene = true
+shader = ExtResource( 77 )
+shader_param/lod = 0.0
+
+[node name="Attack" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 960.0
+margin_bottom = 544.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimBack" type="AnimatedSprite" parent="."]
+position = Vector2( 480, 274 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 1 )
+
+[node name="FlickRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 960.0
+margin_bottom = 544.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FlickRect"]
+autoplay = "Flicker"
+anims/Flicker = SubResource( 2 )
+anims/RESET = SubResource( 3 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="FlickRect"]
+stream = ExtResource( 80 )
+volume_db = -80.0
+autoplay = true
+
+[node name="FogRect" type="ColorRect" parent="."]
+material = SubResource( 5 )
+margin_right = 960.0
+margin_bottom = 544.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FogRect"]
+anims/Distort = SubResource( 9 )
+anims/RESET = SubResource( 10 )
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="BlurRect" type="ColorRect" parent="BackBufferCopy"]
+material = SubResource( 6 )
+margin_right = 960.0
+margin_bottom = 544.0
+mouse_filter = 2
+
+[node name="OutRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 960.0
+margin_bottom = 544.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 79 )
+volume_db = -8.0
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 81 )
+volume_db = -8.0
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 82 )
+volume_db = -12.0
+
+[node name="IntroSting" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 83 )
+volume_db = -6.0

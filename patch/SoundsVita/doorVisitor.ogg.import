@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/doorVisitor.ogg-c6d1bcd11178e0fdcd7b169fd2cdde0a.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/doorVisitor.ogg"
+dest_files=[ "res://.import/doorVisitor.ogg-c6d1bcd11178e0fdcd7b169fd2cdde0a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

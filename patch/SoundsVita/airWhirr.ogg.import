@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/airWhirr.ogg-904552b7d53206196c89c879d2acdb08.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/airWhirr.ogg"
+dest_files=[ "res://.import/airWhirr.ogg-904552b7d53206196c89c879d2acdb08.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

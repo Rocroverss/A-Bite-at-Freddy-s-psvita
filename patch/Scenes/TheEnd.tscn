@@ -1,0 +1,472 @@
+[gd_scene load_steps=37 format=2]
+
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Fonts/LACONIC_LIGHT.OTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/figures.png" type="Texture" id=3]
+[ext_resource path="res://SoundsVita/abafAmbience_quiet.ogg" type="AudioStream" id=4]
+[ext_resource path="res://SoundsVita/roboTalk1.ogg" type="AudioStream" id=5]
+[ext_resource path="res://Scripts/TheEnd.gd" type="Script" id=6]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0004.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0005.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0007.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0016.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0001.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0002.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0003.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0009.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0010.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0006.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0011.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0012.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0008.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0013.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0014.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/animCrawl0015.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Cutscenes/TheEnd/endBG.png" type="Texture" id=23]
+[ext_resource path="res://Scenes/star.tscn" type="PackedScene" id=24]
+[ext_resource path="res://SoundsVita/thereissomethingonthecamsstaycalmstaycalm.ogg" type="AudioStream" id=25]
+[ext_resource path="res://SoundsVita/grasswalk.ogg" type="AudioStream" id=26]
+[ext_resource path="res://SoundsVita/outsideNight.ogg" type="AudioStream" id=27]
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 960, 540 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "ZoomOut"
+length = 24.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"times": PoolRealArray( 0, 10.2, 24 ),
+"transitions": PoolRealArray( -2, 0, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.6, 0.6 ), Vector2( 0.6, 0.6 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2, 12, 23, 23.1 ),
+"transitions": PoolRealArray( 0, -2, 0, 0, 0 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2, 23 ),
+"transitions": PoolRealArray( 0, 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 2200, 540 ), Vector2( 2200, 540 ), Vector2( 960, 540 ) ]
+}
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 3
+font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "ZoomOut"
+length = 24.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 24 ),
+"transitions": PoolRealArray( -2, 1 ),
+"update": 0,
+"values": [ Vector2( 0.8, 0.8 ), Vector2( 1.2, 1.2 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=7]
+animations = [ {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 16 ), ExtResource( 9 ), ExtResource( 19 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="Animation" id=8]
+resource_name = "Crawl"
+length = 30.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 30 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -960, 540 ), Vector2( 2880, 540 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../OvrRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 8, 22, 30 ),
+"transitions": PoolRealArray( -2, 0, -2, -2 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "method"
+tracks/2/path = NodePath("..")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 29.7 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "DoneCrawl"
+} ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../AudioStreamPlayer2:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 8, 22, 30 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -30.0, -4.0, -4.0, -40.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("../AudioStreamPlayer:volume_db")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 8, 22, 30 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ -50.0, -20.0, -20.0, -50.0 ]
+}
+
+[sub_resource type="Animation" id=9]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 960, 540 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../OvrRect:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../AudioStreamPlayer2:volume_db")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -30.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("../AudioStreamPlayer:volume_db")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ -50.0 ]
+}
+
+[node name="TheEnd" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 6 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 480, 270 )
+texture = ExtResource( 23 )
+
+[node name="stars" type="Node2D" parent="."]
+
+[node name="star" parent="stars" instance=ExtResource( 24 )]
+position = Vector2( 976, 88 )
+
+[node name="star2" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 0.623529, 0.792157, 0.627451 )
+position = Vector2( 1255, 70 )
+
+[node name="star3" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 0.917647, 0.592157, 1 )
+position = Vector2( 680, 117 )
+
+[node name="star4" parent="stars" instance=ExtResource( 24 )]
+position = Vector2( 787, 40 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="star5" parent="stars" instance=ExtResource( 24 )]
+position = Vector2( 274, 206 )
+
+[node name="star6" parent="stars" instance=ExtResource( 24 )]
+position = Vector2( 1730, 70 )
+
+[node name="star7" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 0.556863, 0.835294, 1, 1 )
+position = Vector2( 77, 98 )
+
+[node name="star8" parent="stars" instance=ExtResource( 24 )]
+position = Vector2( 1609, 179 )
+
+[node name="star9" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 0.552941, 1, 0.886275, 1 )
+position = Vector2( 118, 197 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="star10" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 0.917647, 0.592157, 1 )
+position = Vector2( 1474, 51 )
+
+[node name="star11" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 0.815686, 1, 0.984314, 1 )
+position = Vector2( 404, 71 )
+scale = Vector2( 0.6, 0.6 )
+
+[node name="star12" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 0.623529, 0.792157, 0.627451 )
+position = Vector2( 1464, 238 )
+scale = Vector2( 0.8, 0.8 )
+
+[node name="star13" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 1, 1, 0.54902 )
+position = Vector2( 637, 45 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="star14" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 1, 1, 0.54902 )
+position = Vector2( 1303, 158 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="star15" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 1, 1, 1, 0.54902 )
+position = Vector2( 122, 35 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="star16" parent="stars" instance=ExtResource( 24 )]
+modulate = Color( 0.666667, 0.976471, 1, 0.705882 )
+position = Vector2( 1900, 165 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Figures" type="Sprite" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Figures"]
+anims/RESET = SubResource( 5 )
+anims/ZoomOut = SubResource( 6 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+visible = false
+margin_right = 1920.0
+margin_bottom = 1080.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 786.0
+margin_top = 438.0
+margin_right = 1134.0
+margin_bottom = 642.0
+
+[node name="WarnLab1" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 348.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 1 )
+text = "THE END"
+align = 1
+valign = 1
+
+[node name="WarnLab2" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_top = 104.0
+margin_right = 348.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 0, 100 )
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 2 )
+text = "Thanks for playing!"
+align = 1
+valign = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position = Vector2( 960, 540 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Camera2D"]
+anims/RESET = SubResource( 3 )
+anims/ZoomOut = SubResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -50.0
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 27 )
+volume_db = -30.0
+autoplay = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 105, 679 )
+stream = ExtResource( 5 )
+volume_db = -32.0
+pitch_scale = 0.85
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 960, 540 )
+scale = Vector2( 1.5, 1.5 )
+frames = SubResource( 7 )
+frame = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite"]
+autoplay = "Crawl"
+anims/Crawl = SubResource( 8 )
+anims/RESET = SubResource( 9 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AnimatedSprite"]
+position = Vector2( 0, 118.667 )
+scale = Vector2( 0.666667, 0.666667 )
+stream = ExtResource( 5 )
+volume_db = -34.0
+pitch_scale = 1.25
+autoplay = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="AnimatedSprite"]
+position = Vector2( 0, 118.667 )
+scale = Vector2( 0.666667, 0.666667 )
+stream = ExtResource( 25 )
+volume_db = -16.0
+autoplay = true
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="AnimatedSprite"]
+position = Vector2( 0, 118.667 )
+scale = Vector2( 0.666667, 0.666667 )
+stream = ExtResource( 26 )
+volume_db = -4.0
+pitch_scale = 0.8
+autoplay = true
+
+[node name="OvrRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )

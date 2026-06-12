@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/leverLock.ogg-062513a9888b50141975394a77f8bb0b.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/leverLock.ogg"
+dest_files=[ "res://.import/leverLock.ogg-062513a9888b50141975394a77f8bb0b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

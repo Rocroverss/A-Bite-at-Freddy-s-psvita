@@ -1,0 +1,203 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Scripts/HallTravel.gd" type="Script" id=1]
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Shaders/ConvBend.tres" type="Shader" id=4]
+[ext_resource path="res://Sprites/Cutscenes/HallTravel/hallTrav2b.png" type="Texture" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "exit",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=3]
+resource_name = "FadeNext"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( -2, -2, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "ToCorner"
+} ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 4 )
+shader_param/amountY = 0.1
+shader_param/amountX = 0.38
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 960, 90 )
+
+[node name="HallTravel" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+color = Color( 0.121569, 0.121569, 0.121569, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 513.5
+margin_top = 509.5
+margin_right = 1406.5
+margin_bottom = 570.5
+custom_fonts/font = SubResource( 1 )
+text = "(This is when you would travel to the dining area)"
+align = 1
+
+[node name="HallBack" type="AnimatedSprite" parent="."]
+position = Vector2( 960, 405 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 2 )
+
+[node name="HideButton" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.560784 )
+margin_right = 350.0
+margin_bottom = 1080.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+
+[node name="UnhideButton" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.560784 )
+margin_left = 1570.0
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+
+[node name="ForwardButton" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 798.0
+margin_top = 254.0
+margin_right = 1120.0
+margin_bottom = 826.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+
+[node name="LeaveButton" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0 )
+margin_left = 1150.0
+margin_top = 20.0
+margin_right = 1369.0
+margin_bottom = 1090.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+
+[node name="DuckButton" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.560784 )
+margin_top = 818.0
+margin_right = 1920.0
+margin_bottom = 1081.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+
+[node name="UnduckButton" type="Button" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.560784 )
+margin_right = 1920.0
+margin_bottom = 263.0
+mouse_default_cursor_shape = 2
+action_mode = 0
+
+[node name="FadeRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeRect"]
+anims/FadeNext = SubResource( 3 )
+anims/RESET = SubResource( 4 )
+
+[node name="Center" type="Node2D" parent="."]
+position = Vector2( 960, 540 )
+
+[node name="roomBend" type="ColorRect" parent="Center"]
+material = SubResource( 5 )
+margin_left = -960.0
+margin_top = -540.0
+margin_right = 960.0
+margin_bottom = 540.0
+mouse_filter = 2
+
+[node name="Camera2D" type="Camera2D" parent="Center"]
+current = true
+
+[node name="DownArea2D" type="Area2D" parent="Center"]
+position = Vector2( 5, 450 )
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center/DownArea2D"]
+shape = SubResource( 6 )
+
+[node name="MouseRefRect" type="ColorRect" parent="."]
+visible = false
+margin_left = 960.0
+margin_top = 540.0
+margin_right = 1000.0
+margin_bottom = 580.0
+
+[connection signal="pressed" from="HideButton" to="." method="_on_HideButton_pressed"]
+[connection signal="pressed" from="UnhideButton" to="." method="_on_UnhideButton_pressed"]
+[connection signal="pressed" from="ForwardButton" to="." method="_on_ForwardButton_pressed"]
+[connection signal="pressed" from="LeaveButton" to="." method="_on_LeaveButton_pressed"]
+[connection signal="pressed" from="DuckButton" to="." method="_on_DuckButton_pressed"]
+[connection signal="pressed" from="UnduckButton" to="." method="_on_UnduckButton_pressed"]
+[connection signal="mouse_entered" from="Center/DownArea2D" to="." method="_on_DownArea2D_mouse_entered"]

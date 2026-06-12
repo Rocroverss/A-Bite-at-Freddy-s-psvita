@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/trayDrop.ogg-e3e57f174fc5c2f4c7b2c32afd25a902.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/trayDrop.ogg"
+dest_files=[ "res://.import/trayDrop.ogg-e3e57f174fc5c2f4c7b2c32afd25a902.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

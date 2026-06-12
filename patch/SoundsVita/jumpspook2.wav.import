@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/jumpspook2.wav-1386840c271c3b3798413ed192ed2496.sample"
+
+[deps]
+
+source_file="res://SoundsVita/jumpspook2.wav"
+dest_files=[ "res://.import/jumpspook2.wav-1386840c271c3b3798413ed192ed2496.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

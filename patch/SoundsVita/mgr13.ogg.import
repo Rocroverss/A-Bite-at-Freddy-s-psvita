@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/mgr13.ogg-5dded56d195afb764dbd868e7ed26227.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/mgr13.ogg"
+dest_files=[ "res://.import/mgr13.ogg-5dded56d195afb764dbd868e7ed26227.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

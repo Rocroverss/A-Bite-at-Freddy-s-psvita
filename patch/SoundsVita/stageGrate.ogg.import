@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stageGrate.ogg-50051a6fe3e8d7e83b69a2b275a36fbd.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/stageGrate.ogg"
+dest_files=[ "res://.import/stageGrate.ogg-50051a6fe3e8d7e83b69a2b275a36fbd.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

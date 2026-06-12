@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rewardBoot.ogg-6c4479f5ce7979c7faca2c5ed0c57ac5.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/rewardBoot.ogg"
+dest_files=[ "res://.import/rewardBoot.ogg-6c4479f5ce7979c7faca2c5ed0c57ac5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

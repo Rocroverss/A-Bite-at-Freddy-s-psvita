@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/chicken.ogg-f0dae8e28cd48df7fb2e81130480b449.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/chicken.ogg"
+dest_files=[ "res://.import/chicken.ogg-f0dae8e28cd48df7fb2e81130480b449.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

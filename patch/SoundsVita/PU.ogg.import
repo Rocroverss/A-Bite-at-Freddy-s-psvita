@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/PU.ogg-852e04bd72f418ff1a295c5b1244c920.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/PU.ogg"
+dest_files=[ "res://.import/PU.ogg-852e04bd72f418ff1a295c5b1244c920.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

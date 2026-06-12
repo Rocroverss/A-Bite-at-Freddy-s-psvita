@@ -1,0 +1,724 @@
+[gd_scene load_steps=85 format=2]
+
+[ext_resource path="res://Sprites/Cutscenes/Aware/awareBack.png" type="Texture" id=1]
+[ext_resource path="res://Shaders/BlurScreen.gdshader" type="Shader" id=2]
+[ext_resource path="res://Scripts/Aware.gd" type="Script" id=3]
+[ext_resource path="res://Shaders/Warpy.gdshader" type="Shader" id=4]
+[ext_resource path="res://Shaders/RoomBend.gdshader" type="Shader" id=5]
+[ext_resource path="res://Sprites/Cutscenes/Aware/fredMask.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0010.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0020.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0021.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0022.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0011.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0013.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0015.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0017.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0014.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0012.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0016.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0018.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0019.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0023.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Cutscenes/Aware/handM0024.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0006.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0005.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0007.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0012.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0001.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0003.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0002.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0004.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0008.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0011.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0010.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Cutscenes/Aware/bonIdle0009.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0012.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0009.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0001.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0002.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0004.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0007.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0006.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0003.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0011.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0010.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0005.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Cutscenes/Aware/chicIdle0008.png" type="Texture" id=45]
+[ext_resource path="res://Fonts/LACONIC_REGULAR.OTF" type="DynamicFontData" id=46]
+[ext_resource path="res://Sprites/Cutscenes/Aware/turnCut.png" type="Texture" id=47]
+[ext_resource path="res://Scripts/ManText.gd" type="Script" id=48]
+[ext_resource path="res://SoundsVita/airRelease.ogg" type="AudioStream" id=49]
+[ext_resource path="res://SoundsVita/airHand2.ogg" type="AudioStream" id=50]
+[ext_resource path="res://SoundsVita/airIdles.ogg" type="AudioStream" id=51]
+[ext_resource path="res://SoundsVita/airHiss.ogg" type="AudioStream" id=52]
+[ext_resource path="res://SoundsVita/airWhirr.ogg" type="AudioStream" id=53]
+[ext_resource path="res://SoundsVita/mgrAware3.ogg" type="AudioStream" id=54]
+[ext_resource path="res://SoundsVita/mgrAware2.ogg" type="AudioStream" id=55]
+[ext_resource path="res://SoundsVita/mgrAware4.ogg" type="AudioStream" id=56]
+[ext_resource path="res://SoundsVita/mgrAware1.ogg" type="AudioStream" id=57]
+[ext_resource path="res://SoundsVita/man1_1.ogg" type="AudioStream" id=58]
+[ext_resource path="res://SoundsVita/man1_2.ogg" type="AudioStream" id=59]
+[ext_resource path="res://SoundsVita/man1_3.ogg" type="AudioStream" id=60]
+[ext_resource path="res://SoundsVita/whailSting.ogg" type="AudioStream" id=61]
+[ext_resource path="res://SoundsVita/Music/introSting2.ogg" type="AudioStream" id=62]
+[ext_resource path="res://SoundsVita/Music/introSting3.ogg" type="AudioStream" id=63]
+
+[sub_resource type="SpriteFrames" id=21]
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 24 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 29 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 26 ) ],
+"loop": false,
+"name": "bonBack",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 26 ), ExtResource( 28 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 23 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 33 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 25 ) ],
+"loop": false,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 35 ), ExtResource( 45 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 44 ), ExtResource( 38 ), ExtResource( 41 ), ExtResource( 37 ), ExtResource( 36 ) ],
+"loop": false,
+"name": "chicBack",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 41 ), ExtResource( 38 ), ExtResource( 44 ), ExtResource( 40 ), ExtResource( 39 ), ExtResource( 45 ), ExtResource( 35 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 34 ) ],
+"loop": false,
+"name": "default",
+"speed": 24.0
+} ]
+
+[sub_resource type="OpenSimplexNoise" id=9]
+octaves = 4
+period = 25.0
+persistence = 0.25
+lacunarity = 1.0
+
+[sub_resource type="NoiseTexture" id=8]
+noise = SubResource( 9 )
+
+[sub_resource type="ShaderMaterial" id=10]
+shader = ExtResource( 4 )
+shader_param/amt = 0.0
+shader_param/distortTex = SubResource( 8 )
+
+[sub_resource type="Animation" id=25]
+resource_name = "EndDistort"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amt")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 0.0, 0.4 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../BackBufferCopy/BlurRect:material:shader_param/lod")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ 0.0, 5.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../OutRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 2, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "EndDistortDone"
+} ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amt")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../BackBufferCopy/BlurRect:material:shader_param/lod")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../OutRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "UnDistort"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:material:shader_param/amt")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 0.4, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../BackBufferCopy/BlurRect:material:shader_param/lod")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ 5.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("../OutRect:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "UndistortDone"
+} ]
+}
+
+[sub_resource type="ShaderMaterial" id=14]
+shader = ExtResource( 5 )
+shader_param/amountY = 1.4
+shader_param/amountX = 0.55
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 149.5, 549.5 )
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 11 ), ExtResource( 16 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 13 ), ExtResource( 17 ), ExtResource( 14 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 19 ), ExtResource( 18 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "default",
+"speed": 30.0
+} ]
+
+[sub_resource type="Animation" id=19]
+resource_name = "HandDown"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 2, 1 ),
+"update": 0,
+"values": [ Vector2( 1410, 660 ), Vector2( 1600, 1280 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("../..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray(  ),
+"transitions": PoolRealArray(  ),
+"values": [  ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "HandIdle"
+length = 2.0
+tracks/0/type = "method"
+tracks/0/path = NodePath("../..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 2 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "HandStuffB"
+} ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "HandUp"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Vector2( 1600, 1280 ), Vector2( 1410, 660 ) ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath("../..")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 3 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "HandStuffA"
+} ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=18]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1410, 596 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="DynamicFont" id=24]
+size = 28
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.705882 )
+extra_spacing_char = 4
+font_data = ExtResource( 46 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 28
+outline_size = 3
+outline_color = Color( 0, 0, 0, 0.705882 )
+extra_spacing_char = 4
+font_data = ExtResource( 46 )
+
+[sub_resource type="CanvasItemMaterial" id=26]
+blend_mode = 1
+
+[sub_resource type="Animation" id=27]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.294118 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../TurnLeft:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.294118 ) ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_name = "TurnFades"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.294118 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("../TurnLeft:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 0.5, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.294118 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="ShaderMaterial" id=13]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/lod = 0.0
+
+[node name="Aware" type="Node2D"]
+scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 3 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[node name="BackSprite" type="Sprite" parent="."]
+position = Vector2( 960, 540 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+
+[node name="BonIdle" type="AnimatedSprite" parent="."]
+position = Vector2( 2940, 540 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 21 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="BonIdle"]
+stream = ExtResource( 51 )
+volume_db = -10.0
+autoplay = true
+max_distance = 1600.0
+
+[node name="ChicIdle" type="AnimatedSprite" parent="."]
+position = Vector2( -945, 540 )
+scale = Vector2( 2, 2 )
+frames = SubResource( 22 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ChicIdle"]
+stream = ExtResource( 51 )
+volume_db = -10.0
+autoplay = true
+max_distance = 1600.0
+
+[node name="ManSounds" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 1232, 540 )
+stream = ExtResource( 57 )
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 1232, 540 )
+stream = ExtResource( 55 )
+volume_db = -6.0
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 1232, 540 )
+stream = ExtResource( 54 )
+volume_db = 2.0
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 1232, 540 )
+stream = ExtResource( 56 )
+volume_db = -4.0
+
+[node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 680, 540 )
+stream = ExtResource( 58 )
+volume_db = -2.0
+
+[node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 680, 540 )
+stream = ExtResource( 59 )
+volume_db = 4.0
+
+[node name="AudioStreamPlayer2D7" type="AudioStreamPlayer2D" parent="ManSounds"]
+position = Vector2( 680, 540 )
+stream = ExtResource( 60 )
+volume_db = 3.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="ManSounds"]
+stream = ExtResource( 62 )
+volume_db = -8.0
+
+[node name="FogRect" type="ColorRect" parent="."]
+material = SubResource( 10 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FogRect"]
+autoplay = "UnDistort"
+anims/EndDistort = SubResource( 25 )
+anims/RESET = SubResource( 11 )
+anims/UnDistort = SubResource( 12 )
+
+[node name="Center" type="Node2D" parent="."]
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="Center"]
+copy_mode = 2
+
+[node name="roomBend" type="ColorRect" parent="Center/BackBufferCopy2"]
+material = SubResource( 14 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+
+[node name="Camera2D" type="Camera2D" parent="Center"]
+position = Vector2( 960, 540 )
+current = true
+
+[node name="RightArea2D" type="Area2D" parent="Center"]
+position = Vector2( 1641, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center/RightArea2D"]
+position = Vector2( 139.5, 539.5 )
+shape = SubResource( 15 )
+
+[node name="LeftArea2D" type="Area2D" parent="Center"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Center/LeftArea2D"]
+position = Vector2( 139.5, 539.5 )
+shape = SubResource( 15 )
+
+[node name="FredHand" type="AnimatedSprite" parent="Center"]
+visible = false
+position = Vector2( 1410, 596 )
+scale = Vector2( 3, 3 )
+frames = SubResource( 16 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/FredHand"]
+anims/HandDown = SubResource( 19 )
+anims/HandIdle = SubResource( 20 )
+anims/HandUp = SubResource( 17 )
+anims/RESET = SubResource( 18 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Center/FredHand"]
+stream = ExtResource( 49 )
+volume_db = -12.0
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Center/FredHand"]
+stream = ExtResource( 50 )
+volume_db = -8.0
+pitch_scale = 0.9
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Center/FredHand"]
+stream = ExtResource( 63 )
+volume_db = -16.0
+
+[node name="FredMask" type="Sprite" parent="Center"]
+position = Vector2( 960, 540 )
+scale = Vector2( 2.1, 2.1 )
+texture = ExtResource( 6 )
+
+[node name="ManLabel2" type="Label" parent="Center"]
+margin_top = 1004.0
+margin_right = 1920.0
+margin_bottom = 1040.0
+rect_min_size = Vector2( 1920, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 24 )
+text = "Man 1: They should be all ready to go."
+align = 1
+valign = 1
+
+[node name="ManText" type="RichTextLabel" parent="Center"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 1004.0
+margin_right = 1920.0
+margin_bottom = 1040.0
+rect_min_size = Vector2( 1920, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/normal_font = SubResource( 23 )
+bbcode_enabled = true
+bbcode_text = "BBText"
+text = "BBText"
+script = ExtResource( 48 )
+
+[node name="ManLabel" type="Label" parent="Center/ManText"]
+margin_right = 1920.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 1920, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 0
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 24 )
+text = "Man 1: They should be all ready to go."
+align = 1
+valign = 1
+
+[node name="TurnRight" type="Sprite" parent="Center"]
+visible = false
+modulate = Color( 1, 1, 1, 0.294118 )
+material = SubResource( 26 )
+position = Vector2( 1870, 540 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 47 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Center/TurnRight"]
+anims/RESET = SubResource( 27 )
+anims/TurnFades = SubResource( 28 )
+
+[node name="TurnLeft" type="Sprite" parent="Center"]
+visible = false
+modulate = Color( 1, 1, 1, 0.294118 )
+material = SubResource( 26 )
+position = Vector2( 50, 540 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 47 )
+flip_h = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Center"]
+stream = ExtResource( 52 )
+volume_db = -14.0
+pitch_scale = 0.8
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Center"]
+stream = ExtResource( 53 )
+volume_db = -8.0
+pitch_scale = 0.85
+
+[node name="Whail" type="AudioStreamPlayer" parent="Center"]
+stream = ExtResource( 61 )
+volume_db = -18.0
+pitch_scale = 0.85
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+copy_mode = 2
+
+[node name="BlurRect" type="ColorRect" parent="BackBufferCopy"]
+material = SubResource( 13 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+
+[node name="OutRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 1 )
+
+[connection signal="mouse_entered" from="Center/RightArea2D" to="." method="_on_RightArea2D_mouse_entered"]
+[connection signal="mouse_exited" from="Center/RightArea2D" to="." method="_on_RightArea2D_mouse_exited"]
+[connection signal="mouse_entered" from="Center/LeftArea2D" to="." method="_on_LeftArea2D_mouse_entered"]
+[connection signal="mouse_exited" from="Center/LeftArea2D" to="." method="_on_LeftArea2D_mouse_exited"]

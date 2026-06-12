@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/newspap2.ogg-2fe241c1ee0119c76ac09da17eb87c26.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/newspap2.ogg"
+dest_files=[ "res://.import/newspap2.ogg-2fe241c1ee0119c76ac09da17eb87c26.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

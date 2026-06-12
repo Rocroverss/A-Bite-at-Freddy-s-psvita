@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/camZoomOut.ogg-5b95ea4cd0b6d8955cbfb38fc611bf33.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/camZoomOut.ogg"
+dest_files=[ "res://.import/camZoomOut.ogg-5b95ea4cd0b6d8955cbfb38fc611bf33.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

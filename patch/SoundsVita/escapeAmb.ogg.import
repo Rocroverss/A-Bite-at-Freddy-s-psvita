@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/escapeAmb.ogg-092fecda25bc766aaf6a10c7dc473d9f.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/escapeAmb.ogg"
+dest_files=[ "res://.import/escapeAmb.ogg-092fecda25bc766aaf6a10c7dc473d9f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

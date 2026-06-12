@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gotcha.ogg-2e84109eed2c041149ca3baa71334ba8.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/gotcha.ogg"
+dest_files=[ "res://.import/gotcha.ogg-2e84109eed2c041149ca3baa71334ba8.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/pistolFire1.ogg-2bf7ad6d562a839cb7c20f5bb2611d0a.oggstr"
+
+[deps]
+
+source_file="res://SoundsVita/pistolFire1.ogg"
+dest_files=[ "res://.import/pistolFire1.ogg-2bf7ad6d562a839cb7c20f5bb2611d0a.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
