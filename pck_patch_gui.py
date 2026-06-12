@@ -107,11 +107,13 @@ def extract_pck(src_path, out_dir):
                 out.write(data)
 
 def repack_pck(extracted_dir, new_pck_path, src_pck=None):
-    """Repack files under extracted_dir into a new .pck, copying header from src_pck if given."""
-    if src_pck:
-        version, reserved, _ = read_header_index(src_pck)
-    else:
-        version, reserved = (0,0,0,0), b'\x00'*64
+    """Repack files under extracted_dir into a new .pck with a clean header."""
+    
+    # BYPASS: Do not copy the potentially corrupted EXE header.
+    # Hardcode a clean Godot 3.5.0 header. 
+    # (If porting a Godot 4.x game, change this to: version = (2, 4, 1, 0))
+    version = (1, 3, 5, 0)
+    reserved = b'\x00' * 64
 
     # collect items
     items = []
