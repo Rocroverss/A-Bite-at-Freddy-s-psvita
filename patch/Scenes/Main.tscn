@@ -4994,7 +4994,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 2, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ) ]
+"values": [ Vector2( 2, 2 ), Vector2( 1.6, 1.6 ) ]
 }
 
 [sub_resource type="Animation" id=148]
@@ -5033,7 +5033,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ) ]
+"values": [ Vector2( 2, 2 ) ]
 }
 
 [sub_resource type="Animation" id=149]
@@ -5073,7 +5073,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0, 0.5 ),
 "transitions": PoolRealArray( 0.5, 1 ),
 "update": 0,
-"values": [ Vector2( 0.8, 0.8 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 1.6, 1.6 ), Vector2( 2, 2 ) ]
 }
 
 [sub_resource type="SpriteFrames" id=235]
@@ -6462,7 +6462,6 @@ __meta__ = {
 [node name="FredHead" type="Sprite" parent="OfficeOverlays"]
 visible = false
 position = Vector2( 3936, 891 )
-scale = Vector2( 2, 2 )
 
 [node name="FredWink" type="AnimatedSprite" parent="OfficeOverlays"]
 position = Vector2( 3096, 554 )
@@ -9161,6 +9160,7 @@ color = Color( 0, 0, 0, 0.470588 )
 [node name="TutImgSprite" type="AnimatedSprite" parent="Center/UserInterface/DialogueSystem"]
 visible = false
 position = Vector2( 1516, 716 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 147 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Center/UserInterface/DialogueSystem/TutImgSprite"]

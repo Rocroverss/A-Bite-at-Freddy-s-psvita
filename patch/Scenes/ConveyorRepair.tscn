@@ -379,7 +379,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ) ]
+"values": [ Vector2( 2, 2 ) ]
 }
 
 [sub_resource type="Animation" id=34]
@@ -406,7 +406,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.2, 0.4, 0.7, 1 ),
 "transitions": PoolRealArray( -2, -2, -2, -2, 1 ),
 "update": 0,
-"values": [ Vector2( 1, 1 ), Vector2( 0.92, 0.92 ), Vector2( 1, 1 ), Vector2( 0.92, 0.92 ), Vector2( 1, 1 ) ]
+"values": [ Vector2( 2, 2 ), Vector2( 1.84, 1.84 ), Vector2( 2, 2 ), Vector2( 1.84, 1.84 ), Vector2( 2, 2 ) ]
 }
 
 [sub_resource type="RectangleShape2D" id=5]
@@ -687,6 +687,7 @@ texture = ExtResource( 3 )
 
 [node name="Conveyor" type="Sprite" parent="."]
 position = Vector2( 960, 1080 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 5 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
@@ -723,10 +724,12 @@ autoplay = true
 [node name="BonConveyor" type="AnimatedSprite" parent="."]
 visible = false
 position = Vector2( 960, 1123 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 10 )
 
 [node name="RedirectSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 932, 1175 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 23 )
 
 [node name="Control" type="Control" parent="."]
@@ -805,6 +808,7 @@ texture = ExtResource( 21 )
 [node name="Conveyor_Dark" type="Sprite" parent="."]
 visible = false
 position = Vector2( 960, 1080 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 6 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Conveyor_Dark"]
@@ -822,7 +826,7 @@ texture = ExtResource( 3 )
 
 [node name="ScarySprite" type="AnimatedSprite" parent="."]
 position = Vector2( 960, 895 )
-scale = Vector2( 1.5, 1.5 )
+scale = Vector2( 2, 2 )
 frames = SubResource( 32 )
 
 [node name="Center" type="Node2D" parent="."]
@@ -850,6 +854,7 @@ mouse_filter = 2
 [node name="Camera2D" type="Camera2D" parent="Center"]
 rotating = true
 current = true
+zoom = Vector2( 2, 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Center/Camera2D"]
 anims/RESET = SubResource( 33 )
@@ -966,10 +971,24 @@ texture = ExtResource( 25 )
 anims/FadeTurn = SubResource( 20 )
 anims/RESET = SubResource( 21 )
 
+[node name="ObjectiveLab" type="Label" parent="Center"]
+margin_left = -920.0
+margin_top = 390.0
+margin_right = 920.0
+margin_bottom = 452.0
+custom_colors/font_color = Color( 0.811765, 0.745098, 0.52549, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 3
+custom_constants/shadow_offset_y = 3
+custom_fonts/font = SubResource( 7 )
+text = "Change all screws without being caught"
+align = 1
+valign = 1
+
 [node name="ScareSprite" type="Sprite" parent="Center"]
 visible = false
 modulate = Color( 1, 1, 1, 0.403922 )
-scale = Vector2( 1.5, 1.5 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 42 )
 
 [node name="ScrewParticles" type="Particles2D" parent="Center"]
@@ -1156,14 +1175,16 @@ mouse_filter = 2
 [node name="TipBox" type="Sprite" parent="."]
 self_modulate = Color( 1, 1, 1, 0.294118 )
 position = Vector2( 787, 1121 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 70 )
 
 [node name="RediLab" type="Label" parent="TipBox"]
 modulate = Color( 1, 1, 1, 0.588235 )
-margin_left = -91.0
-margin_top = 71.0
-margin_right = 89.0
-margin_bottom = 114.0
+margin_left = -45.5
+margin_top = 55.5
+margin_right = 134.5
+margin_bottom = 98.5
+rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 28 )
 text = "REDIRECT"
 align = 1
@@ -1171,10 +1192,11 @@ valign = 1
 
 [node name="RediLab2" type="Label" parent="TipBox"]
 modulate = Color( 1, 1, 1, 0.588235 )
-margin_left = -91.0
-margin_top = 114.0
-margin_right = 89.0
-margin_bottom = 157.0
+margin_left = -47.0
+margin_top = 74.5
+margin_right = 133.0
+margin_bottom = 117.5
+rect_scale = Vector2( 0.5, 0.5 )
 custom_fonts/font = SubResource( 25 )
 text = "Click and hold"
 align = 1

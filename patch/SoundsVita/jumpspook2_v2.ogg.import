@@ -11,5 +11,5 @@ dest_files=[ "res://.import/jumpspook2_v2.ogg-e4399db75a5dd30f714bc3d881a85a8d.o
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
