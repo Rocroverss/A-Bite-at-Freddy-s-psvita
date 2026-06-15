@@ -58,6 +58,15 @@ You now have two options:
 
 ---
 
+## Changelog v1.01:
+- Fixed Foxy behavior.
+- Fixed broken PS Vita controls and buttons in Scene 2B.
+- Upscaled Foxy sprites
+- Upscaled sprites from camera buttons.
+- Upscaled sprites from the FredChop animation.
+
+---
+
 ## Known issues:
 
 - This is the first release, so some bugs may occur.
